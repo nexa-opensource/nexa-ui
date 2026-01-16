@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://nexa-ui-kit.com/sitemap.xml",
+    sitemap: "https://nexa-ui.com/sitemap.xml",
   };
 }

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description:
     "A collection of beautiful, reusable, and accessible UI components built with Radix UI and Tailwind CSS.",
-  metadataBase: new URL("https://nexa-ui-kit.com"), // Replace with actual domain
+  metadataBase: new URL("https://nexa-ui.com"), // Replace with actual domain
   keywords: [
     "Next.js",
     "React",
@@ -34,17 +34,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nexa-ui-kit.com",
-    title: "Nexa UI Kit",
+    url: "https://nexa-ui.com",
+    title: "Nexa UI",
     description:
       "A collection of beautiful, reusable, and accessible UI components built with Radix UI and Tailwind CSS.",
-    siteName: "Nexa UI Kit",
+    siteName: "Nexa UI",
     images: [
       {
         url: "/og-image.jpg", // Make sure to add an og-image.jpg to public folder at some point
         width: 1200,
         height: 630,
-        alt: "Nexa UI Kit - Modern components for React",
+        alt: "Nexa UI - Modern components for React",
       },
     ],
   },
