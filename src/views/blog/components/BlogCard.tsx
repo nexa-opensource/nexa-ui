@@ -2,9 +2,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { CalendarDays, Clock, ArrowRight } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { blogPosts } from "@/data/blog";
-
-type BlogPost = (typeof blogPosts)[number];
+import { BlogPost } from "@/lib/blog-service";
 
 interface BlogCardProps {
   post: BlogPost;

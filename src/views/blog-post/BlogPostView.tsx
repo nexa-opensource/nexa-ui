@@ -3,16 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Clock, ArrowLeft } from "lucide-react";
+import { getBlogPost } from "@/lib/blog-service";
 import Link from "next/link";
 import NotFound from "@/views/not-found";
-
-import { blogPosts } from "@/data/blog";
 import { ShareButtons } from "./components/ShareButtons";
 import { Newsletter } from "./components/Newsletter";
 
-export default function BlogPostView({ id }: { id: string }) {
-  const postId = id ? parseInt(id) : null;
-  const post = blogPosts.find((p) => p.id === postId);
+export default async function BlogPostView({ id }: { id: string }) {
+  const post = await getBlogPost(id);
 
   if (!post) {
     return <NotFound />;
@@ -75,9 +73,10 @@ export default function BlogPostView({ id }: { id: string }) {
           />
         </div>
 
-        <div className="prose prose-lg dark:prose-invert max-w-none">
-          {post.content}
-        </div>
+        <div
+          className="prose prose-lg dark:prose-invert max-w-none"
+          dangerouslySetInnerHTML={{ __html: post.content || "" }}
+        />
 
         <Newsletter />
       </article>

@@ -1,5 +1,5 @@
 import BlogPostView from "@/views/blog-post/BlogPostView";
-import { blogPosts } from "@/data/blog";
+import { getBlogPost } from "@/lib/blog-service";
 import { Metadata } from "next";
 
 export async function generateMetadata({
@@ -8,7 +8,7 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  const post = blogPosts.find((p) => p.id === parseInt(id));
+  const post = await getBlogPost(id);
 
   if (!post) {
     return {

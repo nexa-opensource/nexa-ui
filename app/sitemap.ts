@@ -1,8 +1,10 @@
 import { MetadataRoute } from "next";
-import { blogPosts } from "@/data/blog";
+import { getBlogPosts } from "@/lib/blog-service";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://nexa-ui.com"; // Replace with your actual domain
+
+  const blogPosts = await getBlogPosts();
 
   const posts = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.id}`,

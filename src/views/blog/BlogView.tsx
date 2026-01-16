@@ -1,8 +1,10 @@
 import { Navbar } from "@/components/layout/Navbar";
-import { blogPosts } from "@/data/blog";
+import { getBlogPosts } from "@/lib/blog-service";
 import { BlogCard } from "./components/BlogCard";
 
-export default function BlogView() {
+export default async function BlogView() {
+  const posts = await getBlogPosts();
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -15,7 +17,7 @@ export default function BlogView() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
+          {posts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}
         </div>
