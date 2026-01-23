@@ -15,6 +15,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import Logo from "@/assets/images/logo-brandmark.png";
+import Image from "next/image";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -59,11 +61,11 @@ export function Navbar() {
       >
         <div className="mr-4 hidden md:flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <div className="bg-primary text-primary-foreground p-1 rounded-md">
-              <Package2 className="h-5 w-5" />
+            <div className="bg-muted text-primary-foreground p-1 rounded-md">
+              <Image src={Logo} alt="" width={24} height={24} />
             </div>
-            <span className="hidden font-bold sm:inline-block tracking-tight">
-              ShadcnUIKit
+            <span className="hidden font-bold sm:inline-block tracking-tight text-transparent bg-clip-text bg-linear-to-r from-emerald-500 to-teal-600">
+              NexaUIKit
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">

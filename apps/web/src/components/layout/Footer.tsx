@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { Package2, Github, Twitter, Linkedin } from "lucide-react";
-
+import Image from "next/image";
+import Logo from "@/assets/images/logo-brandmark.png";
 export function Footer() {
   return (
     <footer className="border-t bg-muted/10">
@@ -9,8 +10,10 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Package2 className="h-6 w-6" />
-              <span className="font-bold text-xl">ShadcnUIKit</span>
+              <Image src={Logo} alt="" width={24} height={24} />
+              <span className="hidden font-bold sm:inline-block tracking-tight text-transparent bg-clip-text bg-linear-to-r from-emerald-500 to-teal-600">
+                NexaUIKit
+              </span>
             </Link>
             <p className="text-muted-foreground text-sm max-w-xs mb-6">
               Beautifully designed components built with Radix UI and Tailwind
@@ -140,7 +143,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© 2024 ShadcnUIKit. All rights reserved.</p>
+          <p>© 2026 NexaUIKit. All rights reserved.</p>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-500"></span>
             All systems operational

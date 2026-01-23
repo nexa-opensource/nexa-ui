@@ -72,7 +72,7 @@ export function Hero() {
               className="text-5xl md:text-7xl font-bold tracking-tighter text-foreground"
             >
               Build your next idea <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-500 to-teal-600">
                 even faster.
               </span>
             </motion.h1>

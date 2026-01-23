@@ -204,7 +204,7 @@ export function BentoFeatures() {
       <div className="text-center space-y-4 max-w-3xl mx-auto">
         <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">
           Engineered for{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600">
+          <span className="bg-clip-text text-transparent bg-linear-to-r from-emerald-500 to-teal-600">
             Excellence
           </span>
           .
