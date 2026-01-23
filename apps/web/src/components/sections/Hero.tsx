@@ -62,7 +62,7 @@ export function Hero() {
               className="inline-flex items-center rounded-full border bg-background/50 backdrop-blur-sm px-3 py-1 text-sm text-muted-foreground"
             >
               <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-              <span className="font-medium">Shadcn UI Kit v2.0</span>
+              <span className="font-medium">Nexa UI Kit v2.0</span>
             </motion.div>
 
             <motion.h1
