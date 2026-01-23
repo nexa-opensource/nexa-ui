@@ -10,7 +10,13 @@
 - ✅ Created `.prettierrc.js` for code formatting
 - ✅ Created `.prettierignore` to exclude build files
 
-### 2. Applications
+### 2. Git Repository
+- ✅ Initialized single Git repository at root
+- ✅ Removed individual Git repositories from apps (web, docs, playground)
+- ✅ Made initial commit with all files
+- ✅ Repository structure: **1 Git repo** for the entire monorepo
+
+### 3. Applications
 All three Next.js apps are configured and running on different ports:
 
 - **web** - Main application
@@ -25,7 +31,7 @@ All three Next.js apps are configured and running on different ports:
   - Port: 3002
   - URL: http://localhost:3002
 
-### 3. Shared Packages
+### 4. Shared Packages
 
 #### @nexa/typescript-config
 Located in `packages/typescript-config/`
@@ -38,7 +44,7 @@ Located in `packages/eslint-config/`
 - `next.js` - ESLint config for Next.js apps
 - `library.js` - ESLint config for libraries
 
-### 4. Available Scripts
+### 5. Available Scripts
 
 Run from the root directory:
 
@@ -61,7 +67,7 @@ yarn format              # Format all files with Prettier
 yarn clean               # Clean all build artifacts
 ```
 
-### 5. Turborepo Features Configured
+### 6. Turborepo Features Configured
 
 - ✅ **Task Pipelines**: Build, dev, lint, type-check, clean
 - ✅ **Caching**: Automatic caching of build outputs
@@ -69,7 +75,7 @@ yarn clean               # Clean all build artifacts
 - ✅ **Dependency Management**: Proper task dependencies configured
 - ✅ **Environment Variables**: NODE_ENV, CI, VERCEL configured
 
-### 6. Project Structure
+### 7. Project Structure
 
 ```
 nexa/
