@@ -21,19 +21,19 @@ async rewrites() {
   return [
     {
       source: "/docs",
-      destination: "http://localhost:3001",
+      destination: "http://localhost:3001/docs",
     },
     {
       source: "/docs/:path*",
-      destination: "http://localhost:3001/:path*",
+      destination: "http://localhost:3001/docs/:path*",
     },
     {
       source: "/playground",
-      destination: "http://localhost:3002",
+      destination: "http://localhost:3002/playground",
     },
     {
       source: "/playground/:path*",
-      destination: "http://localhost:3002/:path*",
+      destination: "http://localhost:3002/playground/:path*",
     },
   ];
 }
