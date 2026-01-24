@@ -9,6 +9,12 @@
     "blog": "블로그",
     "searchPlaceholder": "구성 요소 검색..."
   },
+  "Search": {
+    "placeholder": "명령을 입력하거나 검색...",
+    "noResults": "결과를 찾을 수 없습니다.",
+    "suggestions": "제안",
+    "explore": "탐색"
+  },
   "Hero": {
     "badge": "Nexa UI Kit v2.0",
     "titlePrefix": "다음 아이디어를",

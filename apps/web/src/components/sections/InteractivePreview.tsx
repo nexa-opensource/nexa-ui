@@ -10,8 +10,20 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar } from "@/components/ui/calendar";
-import { useState } from "react";
-// import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis, Bar, BarChart } from "recharts";
+import { useState, useEffect } from "react";
+import {
+  Area,
+  AreaChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+  Bar,
+  BarChart,
+} from "recharts";
+
+// ... existing code ...
+
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {
@@ -81,6 +93,13 @@ import { useTranslations } from "next-intl";
 export function InteractivePreview() {
   const t = useTranslations("InteractivePreview");
   const [activeView, setActiveView] = useState("overview");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <section className="container mx-auto py-20 relative overflow-hidden">
@@ -97,8 +116,7 @@ export function InteractivePreview() {
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, type: "spring", bounce: 0.2 }}
         className="rounded-xl border bg-background shadow-2xl overflow-hidden max-w-6xl mx-auto ring-1 ring-slate-900/10 dark:ring-white/10"
       >
@@ -290,11 +308,39 @@ export function InteractivePreview() {
                           <CardTitle>Overview</CardTitle>
                         </CardHeader>
                         <CardContent className="pl-2">
-                          <div className="h-[300px] flex items-center justify-center bg-muted/20 rounded-md border border-dashed">
-                            <p className="text-muted-foreground text-sm flex items-center gap-2">
-                              <Activity className="w-4 h-4" /> Chart
-                              Visualization
-                            </p>
+                          <div className="h-[300px] w-full">
+                            <ResponsiveContainer width="100%" height="100%">
+                              <BarChart data={data}>
+                                <XAxis
+                                  dataKey="name"
+                                  stroke="#888888"
+                                  fontSize={12}
+                                  tickLine={false}
+                                  axisLine={false}
+                                />
+                                <YAxis
+                                  stroke="#888888"
+                                  fontSize={12}
+                                  tickLine={false}
+                                  axisLine={false}
+                                  tickFormatter={(value) => `$${value}`}
+                                />
+                                <Tooltip
+                                  cursor={{ fill: "transparent" }}
+                                  contentStyle={{
+                                    borderRadius: "8px",
+                                    border: "none",
+                                    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                                  }}
+                                />
+                                <Bar
+                                  dataKey="total"
+                                  fill="currentColor"
+                                  radius={[4, 4, 0, 0]}
+                                  className="fill-primary"
+                                />
+                              </BarChart>
+                            </ResponsiveContainer>
                           </div>
                         </CardContent>
                       </Card>

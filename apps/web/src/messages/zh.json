@@ -9,6 +9,12 @@
     "blog": "博客",
     "searchPlaceholder": "搜索组件..."
   },
+  "Search": {
+    "placeholder": "输入命令或搜索...",
+    "noResults": "未找到结果。",
+    "suggestions": "建议",
+    "explore": "探索"
+  },
   "Hero": {
     "badge": "Nexa UI Kit v2.0",
     "titlePrefix": "更快地构建",

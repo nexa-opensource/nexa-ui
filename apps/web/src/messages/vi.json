@@ -9,6 +9,12 @@
     "blog": "Tin tức",
     "searchPlaceholder": "Tìm kiếm thành phần..."
   },
+  "Search": {
+    "placeholder": "Nhập tin tìm kiếm...",
+    "noResults": "Không tìm thấy kết quả.",
+    "suggestions": "Gợi ý",
+    "explore": "Khám phá"
+  },
   "Hero": {
     "badge": "Nexa UI Kit v2.0",
     "titlePrefix": "Xây dụng ý tưởng của bạn",

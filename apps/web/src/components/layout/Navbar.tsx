@@ -19,11 +19,13 @@ import Logo from "@/assets/images/logo-brandmark.png";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { SearchCommand } from "./SearchCommand";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
   const t = useTranslations("Navbar");
 
   useEffect(() => {
@@ -32,7 +34,19 @@ export function Navbar() {
       setScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    const down = (e: KeyboardEvent) => {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        setOpen((open) => !open);
+      }
+    };
+    document.addEventListener("keydown", down);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("keydown", down);
+    };
   }, []);
 
   if (!mounted) {
@@ -121,17 +135,20 @@ export function Navbar() {
         <div className="hidden md:flex items-center flex-1 max-w-sm ml-auto mr-4">
           <div className="relative w-full">
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-            <input
-              type="text"
-              placeholder={t("searchPlaceholder")}
-              className="w-full h-9 rounded-md border border-input bg-muted/50 px-9 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-            />
-            <div className="absolute right-2 top-2 flex items-center gap-0.5 text-xs text-muted-foreground border px-1.5 rounded bg-background">
+            <Button
+              variant="outline"
+              className="w-full h-9 justify-start rounded-md border border-input bg-muted/50 px-9 text-sm shadow-sm transition-colors hover:bg-muted text-muted-foreground font-normal"
+              onClick={() => setOpen(true)}
+            >
+              {t("searchPlaceholder")}
+            </Button>
+            <div className="absolute right-2 top-2 flex items-center gap-0.5 text-xs text-muted-foreground border px-1.5 rounded bg-background pointer-events-none">
               <Command className="h-3 w-3" />
               <span>K</span>
             </div>
           </div>
         </div>
+        <SearchCommand open={open} onOpenChange={setOpen} />
 
         <Sheet>
           <SheetTrigger asChild>

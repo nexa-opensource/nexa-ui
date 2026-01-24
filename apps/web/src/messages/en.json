@@ -9,6 +9,12 @@
     "blog": "Blog",
     "searchPlaceholder": "Search components..."
   },
+  "Search": {
+    "placeholder": "Type a command or search...",
+    "noResults": "No results found.",
+    "suggestions": "Suggestions",
+    "explore": "Explore"
+  },
   "Hero": {
     "badge": "Nexa UI Kit v2.0",
     "titlePrefix": "Build your next idea",

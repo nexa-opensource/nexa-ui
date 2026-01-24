@@ -9,6 +9,12 @@
     "blog": "ブログ",
     "searchPlaceholder": "コンポーネントを検索..."
   },
+  "Search": {
+    "placeholder": "コマンドを入力または検索...",
+    "noResults": "結果が見つかりません。",
+    "suggestions": "提案",
+    "explore": "探索"
+  },
   "Hero": {
     "badge": "Nexa UI Kit v2.0",
     "titlePrefix": "次のアイデアを",
