@@ -3,6 +3,7 @@
     "docs": "Tài liệu",
     "components": "Thành phần",
     "themes": "Giao diện",
+    "templates": "Mẫu",
     "showcase": "Trình diễn",
     "pricing": "Bảng giá",
     "blog": "Tin tức",
@@ -239,6 +240,27 @@
         "desc": "Các thành phần máy chủ đang thay đổi cách chúng ta xây dựng các ứng dụng web như thế nào. Những điều bạn cần biết cho năm 2024.",
         "category": "Quan điểm"
       }
+    }
+  },
+  "Templates": {
+    "title": "Mẫu giao diện",
+    "subtitle": "Các mẫu sẵn sàng sản xuất để khởi động dự án tiếp theo của bạn. Sao chép và tùy chỉnh.",
+    "livePreview": "Xem trước",
+    "clone": "Sao chép mẫu",
+    "cloneCommand": "Lệnh sao chép",
+    "copyCommand": "Sao chép lệnh",
+    "copied": "Đã sao chép!",
+    "pro": "Pro",
+    "free": "Miễn phí",
+    "viewAll": "Xem tất cả",
+    "filterAll": "Tất cả",
+    "techStack": "Công nghệ",
+    "categories": {
+      "all": "Tất cả mẫu",
+      "landing": "Trang đích",
+      "dashboard": "Bảng điều khiển",
+      "portfolio": "Hồ sơ năng lực",
+      "ecommerce": "Thương mại điện tử"
     }
   }
 }

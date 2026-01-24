@@ -3,6 +3,7 @@
     "docs": "문서",
     "components": "구성 요소",
     "themes": "테마",
+    "templates": "템플릿",
     "showcase": "쇼케이스",
     "pricing": "가격",
     "blog": "블로그",
@@ -239,6 +240,27 @@
         "desc": "서버 구성 요소가 웹 애플리케이션 구축 방식을 변경하는 방법. 2024년에 알아야 할 사항.",
         "category": "의견"
       }
+    }
+  },
+  "Templates": {
+    "title": "템플릿",
+    "subtitle": "다음 프로젝트를 빠르게 시작하기 위한 프로덕션 준비 템플릿입니다. 복제하여 사용자 정의하세요.",
+    "livePreview": "라이브 미리보기",
+    "clone": "템플릿 복제",
+    "cloneCommand": "복제 명령",
+    "copyCommand": "명령 복사",
+    "copied": "복사됨!",
+    "pro": "프로",
+    "free": "무료",
+    "viewAll": "모두 보기",
+    "filterAll": "전체",
+    "techStack": "기술 스택",
+    "categories": {
+      "all": "전체 템플릿",
+      "landing": "랜딩 페이지",
+      "dashboard": "대시보드",
+      "portfolio": "포트폴리오",
+      "ecommerce": "전자 상거래"
     }
   }
 }

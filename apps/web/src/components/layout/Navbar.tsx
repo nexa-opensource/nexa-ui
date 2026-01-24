@@ -91,6 +91,12 @@ export function Navbar() {
               {t("themes")}
             </Link>
             <Link
+              href="/templates"
+              className="transition-colors hover:text-foreground/80 text-foreground/60"
+            >
+              {t("templates")}
+            </Link>
+            <Link
               href="/showcase"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
@@ -161,6 +167,12 @@ export function Navbar() {
                   className="text-foreground/70 transition-colors hover:text-foreground"
                 >
                   {t("themes")}
+                </Link>
+                <Link
+                  href="/templates"
+                  className="text-foreground/70 transition-colors hover:text-foreground"
+                >
+                  {t("templates")}
                 </Link>
                 <Link
                   href="/showcase"

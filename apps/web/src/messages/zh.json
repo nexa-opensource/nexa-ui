@@ -3,6 +3,7 @@
     "docs": "文档",
     "components": "组件",
     "themes": "主题",
+    "templates": "模板",
     "showcase": "展示",
     "pricing": "定价",
     "blog": "博客",
@@ -239,6 +240,27 @@
         "desc": "服务器组件如何改变我们构建Web应用程序的方式。2024年你需要知道的事。",
         "category": "观点"
       }
+    }
+  },
+  "Templates": {
+    "title": "模板",
+    "subtitle": "可以立即用于生产的模板，助您快速启动下一个项目。克隆并自定义。",
+    "livePreview": "实时预览",
+    "clone": "克隆模板",
+    "cloneCommand": "克隆命令",
+    "copyCommand": "复制命令",
+    "copied": "已复制！",
+    "pro": "专业版",
+    "free": "免费",
+    "viewAll": "查看全部",
+    "filterAll": "全部",
+    "techStack": "技术栈",
+    "categories": {
+      "all": "所有模板",
+      "landing": "落地页",
+      "dashboard": "仪表板",
+      "portfolio": "作品集",
+      "ecommerce": "电子商务"
     }
   }
 }

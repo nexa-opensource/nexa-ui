@@ -3,6 +3,7 @@
     "docs": "ドキュメント",
     "components": "コンポーネント",
     "themes": "テーマ",
+    "templates": "テンプレート",
     "showcase": "ショーケース",
     "pricing": "価格",
     "blog": "ブログ",
@@ -239,6 +240,27 @@
         "desc": "サーバーコンポーネントがWebアプリケーションの構築方法をどのように変えているか。2024年に知っておくべきこと。",
         "category": "オピニオン"
       }
+    }
+  },
+  "Templates": {
+    "title": "テンプレート",
+    "subtitle": "次のプロジェクトをすぐに開始するための、本番環境対応のテンプレート。複製してカスタマイズしてください。",
+    "livePreview": "ライブプレビュー",
+    "clone": "テンプレートを複製",
+    "cloneCommand": "複製コマンド",
+    "copyCommand": "コマンドをコピー",
+    "copied": "コピーしました！",
+    "pro": "プロ",
+    "free": "無料",
+    "viewAll": "すべて表示",
+    "filterAll": "すべて",
+    "techStack": "技術スタック",
+    "categories": {
+      "all": "すべてのテンプレート",
+      "landing": "ランディングページ",
+      "dashboard": "ダッシュボード",
+      "portfolio": "ポートフォリオ",
+      "ecommerce": "Eコマース"
     }
   }
 }
