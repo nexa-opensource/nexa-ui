@@ -3,6 +3,7 @@
     "docs": "Docs",
     "components": "Components",
     "themes": "Themes",
+    "templates": "Templates",
     "showcase": "Showcase",
     "pricing": "Pricing",
     "blog": "Blog",
@@ -239,6 +240,27 @@
         "desc": "How server components are changing the way we build web applications. What you need to know for 2024.",
         "category": "Opinion"
       }
+    }
+  },
+  "Templates": {
+    "title": "Templates",
+    "subtitle": "Production-ready templates to jumpstart your next project. Clone and customize.",
+    "livePreview": "Live Preview",
+    "clone": "Clone Template",
+    "cloneCommand": "Clone Command",
+    "copyCommand": "Copy command",
+    "copied": "Copied!",
+    "pro": "Pro",
+    "free": "Free",
+    "viewAll": "View All",
+    "filterAll": "All",
+    "techStack": "Tech Stack",
+    "categories": {
+      "all": "All Templates",
+      "landing": "Landing Pages",
+      "dashboard": "Dashboards",
+      "portfolio": "Portfolios",
+      "ecommerce": "E-commerce"
     }
   }
 }

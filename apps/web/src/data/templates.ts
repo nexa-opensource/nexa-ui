@@ -1,0 +1,93 @@
+import type { Template } from "@/types/template";
+
+export const templates: Template[] = [
+  {
+    id: "1",
+    slug: "saas-landing",
+    title: "SaaS Landing Page",
+    description:
+      "Modern SaaS landing page with hero, features, pricing, and testimonials. Built for conversion.",
+    category: "landing",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    previewUrl: "https://nexa-saas-landing.vercel.app",
+    cloneCommand: "npx degit nexa-ui/saas-landing my-saas",
+    techStack: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    isPremium: false,
+    featured: true,
+    createdAt: "2026-01-15",
+    updatedAt: "2026-01-20",
+  },
+  {
+    id: "2",
+    slug: "dashboard-starter",
+    title: "Dashboard Starter",
+    description:
+      "Clean admin dashboard with sidebar, charts, tables, and authentication. Ready for your data.",
+    category: "dashboard",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    previewUrl: "https://nexa-dashboard.vercel.app",
+    cloneCommand: "npx degit nexa-ui/dashboard-starter my-dashboard",
+    techStack: ["Next.js", "Tailwind CSS", "Recharts", "Supabase"],
+    isPremium: false,
+    featured: true,
+    createdAt: "2026-01-10",
+    updatedAt: "2026-01-18",
+  },
+  {
+    id: "3",
+    slug: "portfolio-minimal",
+    title: "Portfolio Template",
+    description:
+      "Minimalist portfolio for developers and designers. Showcase projects with style.",
+    category: "portfolio",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    previewUrl: "https://nexa-portfolio.vercel.app",
+    cloneCommand: "npx degit nexa-ui/portfolio-minimal my-portfolio",
+    techStack: ["Next.js", "Tailwind CSS", "MDX"],
+    isPremium: false,
+    featured: false,
+    createdAt: "2026-01-08",
+    updatedAt: "2026-01-12",
+  },
+  {
+    id: "4",
+    slug: "ecommerce-pro",
+    title: "E-commerce Store",
+    description:
+      "Full-featured e-commerce template with cart, checkout, and product pages. Stripe ready.",
+    category: "ecommerce",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    previewUrl: "https://nexa-ecommerce.vercel.app",
+    cloneCommand: "npx degit nexa-ui/ecommerce-pro my-store",
+    techStack: ["Next.js", "Tailwind CSS", "Stripe", "Supabase"],
+    isPremium: true,
+    price: 49,
+    featured: true,
+    createdAt: "2026-01-05",
+    updatedAt: "2026-01-22",
+  },
+  {
+    id: "5",
+    slug: "agency-landing",
+    title: "Agency Landing",
+    description:
+      "Bold agency website template with animations, case studies, and contact forms.",
+    category: "landing",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    previewUrl: "https://nexa-agency.vercel.app",
+    cloneCommand: "npx degit nexa-ui/agency-landing my-agency",
+    techStack: ["Next.js", "Tailwind CSS", "Framer Motion", "React Hook Form"],
+    isPremium: true,
+    price: 39,
+    featured: false,
+    createdAt: "2026-01-03",
+    updatedAt: "2026-01-19",
+  },
+];
+
+export const templateCategories = [
+  { value: "landing", label: "Landing Pages" },
+  { value: "dashboard", label: "Dashboards" },
+  { value: "portfolio", label: "Portfolios" },
+  { value: "ecommerce", label: "E-commerce" },
+] as const;
