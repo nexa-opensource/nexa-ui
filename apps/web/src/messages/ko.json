@@ -1,0 +1,244 @@
+{
+  "Navbar": {
+    "docs": "문서",
+    "components": "구성 요소",
+    "themes": "테마",
+    "showcase": "쇼케이스",
+    "pricing": "가격",
+    "blog": "블로그",
+    "searchPlaceholder": "구성 요소 검색..."
+  },
+  "Hero": {
+    "badge": "Nexa UI Kit v2.0",
+    "titlePrefix": "다음 아이디어를",
+    "titleHighlight": "더 빠르게 구축하세요.",
+    "description": "앱에 복사하여 붙여넣을 수 있는 아름답게 디자인된 구성 요소입니다. 접근성. 사용자 정의 가능. 오픈 소스.",
+    "getStarted": "시작하기"
+  },
+  "LogoTicker": {
+    "trustedBy": "혁신적인 팀이 신뢰합니다"
+  },
+  "Features": {
+    "titlePrefix": "탁월함을 위해",
+    "titleHighlight": "설계되었습니다",
+    "description": "우리는 구성 요소 라이브러리를 처음부터 다시 생각했습니다. ShadcnUIKit의 차이점은 다음과 같습니다.",
+    "design": {
+      "title": "디자인 시스템",
+      "description": "제품을 위한 완벽하고 조합 가능한 아키텍처입니다. 글로벌 토큰, 통합된 색상 및 일관된 간격."
+    },
+    "typeSafe": {
+      "title": "타입 안전",
+      "description": "우수한 개발자 경험을 위해 TypeScript로 구축되었습니다. 자동 완성, 유효성 검사 및 런타임 오류 없음."
+    },
+    "responsive": {
+      "title": "반응형",
+      "description": "모바일 우선 아키텍처로 앱이 휴대폰, 태블릿 및 데스크탑에서 자동으로 완벽하게 보이도록 보장합니다."
+    },
+    "performance": {
+      "title": "성능",
+      "description": "런타임 오버헤드 없이 속도 최적화. 구성 요소는 표준 React 및 CSS로 컴파일됩니다."
+    }
+  },
+  "InteractivePreview": {
+    "headerTitle": "대시보드 경험",
+    "headerDescription": "구성 요소의 성능을 보여주는 완벽하게 작동하는 반응형 대시보드 레이아웃입니다."
+  },
+  "Footer": {
+    "description": "Radix UI 및 Tailwind CSS로 구축된 아름답게 디자인된 구성 요소입니다. 오픈 소스이며 애플리케이션에서 무료로 사용할 수 있습니다.",
+    "product": "제품",
+    "resources": "자원",
+    "legal": "법률",
+    "components": "구성 요소",
+    "themes": "테마",
+    "pricing": "가격",
+    "showcase": "쇼케이스",
+    "documentation": "문서",
+    "blog": "블로그",
+    "community": "커뮤니티",
+    "helpCenter": "도움말 센터",
+    "privacy": "개인 정보 보호 정책",
+    "terms": "서비스 약관",
+    "license": "라이센스",
+    "rights": "© 2026 NexaUIKit. All rights reserved.",
+    "status": "모든 시스템이 정상 작동 중"
+  },
+  "Docs": {
+    "sidebar": {
+      "gettingStarted": "시작하기",
+      "introduction": "소개",
+      "installation": "설치",
+      "theming": "테마",
+      "examples": "예제",
+      "components": "구성 요소",
+      "hooks": "후크"
+    },
+    "main": {
+      "title": "문서",
+      "subtitle": "ShadcnUIKit에 대한 포괄적인 문서에 오신 것을 환영합니다. 여기에서 더 나은 애플리케이션을 더 빠르게 구축하는 데 도움이 되는 자세한 가이드, 구성 요소 API 및 실제 예제를 찾을 수 있습니다.",
+      "installation": "설치",
+      "installationDesc": "몇 분 안에 설정하고 실행하세요.",
+      "theming": "테마",
+      "themingDesc": "앱의 모든 측면을 사용자 정의하세요.",
+      "themingContent": "CSS 변수 및 Tailwind로 구축되었습니다.",
+      "openSource": "우리의 라이브러리는 프로젝트에 복사하여 붙여넣을 수 있도록 설계되었습니다. 특정 종속성에 갇히는 것을 믿지 않습니다. 코드는 귀하의 소유입니다. 사용자 정의하고 확장하여 나만의 것으로 만들 수 있습니다.",
+      "onThisPage": "이 페이지에서"
+    },
+    "examples": {
+      "button": {
+        "title": "버튼 구성 요소",
+        "desc": "버튼 또는 버튼처럼 보이는 구성 요소를 표시합니다."
+      },
+      "hook": {
+        "title": "useToast 후크",
+        "desc": "토스트 알림을 관리하는 강력한 후크입니다."
+      },
+      "theme": {
+        "title": "테마",
+        "desc": "강력한 테마 기능을 위해 CSS 변수를 사용하세요."
+      }
+    },
+    "backToHome": "홈으로 돌아가기"
+  },
+  "ComponentsPage": {
+    "title": "구성 요소",
+    "subtitle": "아름답게 디자인되고 접근하기 쉬운 구성 요소입니다. 앱에 복사하여 붙여넣으세요.",
+    "cards": {
+      "card": {
+        "title": "카드",
+        "desc": "관련 콘텐츠를 그룹화하기 위한 컨테이너입니다.",
+        "notificationTitle": "알림",
+        "notificationDesc": "새 메시지가 있습니다."
+      },
+      "button": {
+        "title": "버튼",
+        "desc": "이벤트 또는 작업을 트리거합니다."
+      },
+      "input": {
+        "title": "입력",
+        "desc": "사용자 입력을 위한 양식 컨트롤입니다."
+      },
+      "badge": {
+        "title": "배지",
+        "desc": "상태 또는 값을 표시합니다."
+      },
+      "avatar": {
+        "title": "아바타",
+        "desc": "사용자 프로필을 위한 이미지 요소입니다."
+      },
+      "interactive": {
+        "title": "대화형",
+        "desc": "상태가 있는 구성 요소입니다.",
+        "airplaneMode": "비행기 모드",
+        "volume": "볼륨"
+      }
+    }
+  },
+  "Themes": {
+    "title": "테마 사용자 정의",
+    "subtitle": "UI 경험을 사용자 정의하십시오. 구성 요소의 스타일과 색상을 선택하십시오.",
+    "sponsor": "테마 스폰서",
+    "sponsorDesc": "여기에 브랜드를 소개하십시오",
+    "sidebar": {
+      "color": "색상",
+      "mode": "모드",
+      "light": "라이트",
+      "dark": "다크"
+    },
+    "preview": {
+      "dashboard": "대시보드",
+      "overview": "프로젝트 활동 개요.",
+      "totalRevenue": "총 수익",
+      "activeUsers": "활성 사용자",
+      "lastMonth": "지난달 대비",
+      "formElements": "양식 요소",
+      "primaryButton": "기본",
+      "secondaryButton": "보조",
+      "outlineButton": "개요",
+      "destructiveButton": "파괴적"
+    }
+  },
+  "Showcase": {
+    "title": "구축된 프로젝트",
+    "subtitle": "개발자들이 구축하고 있는 놀라운 애플리케이션을 발견하십시오. 엔터프라이즈 대시보드에서 창의적인 포트폴리오까지.",
+    "communityGallery": "커뮤니티 갤러리",
+    "submit": "프로젝트 제출",
+    "viewDocs": "문서 보기",
+    "visit": "웹사이트 방문",
+    "categories": {
+      "All": "전체",
+      "SaaS": "SaaS",
+      "E-commerce": "전자 상거래",
+      "Portfolio": "포트폴리오",
+      "Dashboard": "대시보드"
+    }
+  },
+  "Pricing": {
+    "title": "간단하고 투명한 가격",
+    "subtitle": "프로젝트에 완벽한 요금제를 선택하십시오. 모든 요금제에는 핵심 구성 요소에 대한 액세스가 포함됩니다.",
+    "monthly": "월간",
+    "yearly": "연간",
+    "save20": "(20% 절약)",
+    "month": "월",
+    "popular": "가장 인기 있음",
+    "plans": {
+      "hobby": {
+        "name": "취미",
+        "desc": "개인 프로젝트에 적합합니다.",
+        "button": "시작하기",
+        "features": {
+          "access": "모든 핵심 구성 요소 액세스",
+          "community": "커뮤니티 지원",
+          "basic": "기본 테마",
+          "charts": "고급 차트",
+          "priority": "우선 지원"
+        }
+      },
+      "pro": {
+        "name": "프로",
+        "desc": "전문 개발자를 위해.",
+        "button": "지금 구독",
+        "features": {
+          "everythingHobby": "취미의 모든 것",
+          "charts": "고급 차트 및 지도",
+          "multiple": "여러 테마",
+          "priority": "우선 이메일 지원",
+          "remove": "속성 제거"
+        }
+      },
+      "enterprise": {
+        "name": "엔터프라이즈",
+        "desc": "대규모 팀 및 조직을 위해.",
+        "button": "영업팀 문의",
+        "features": {
+          "everythingPro": "프로의 모든 것",
+          "unlimited": "무제한 프로젝트",
+          "dedicated": "전용 지원 채널",
+          "custom": "맞춤형 구성 요소 요청",
+          "sla": "SLA 및 계약"
+        }
+      }
+    }
+  },
+  "Blog": {
+    "title": "블로그",
+    "subtitle": "팀의 업데이트, 튜토리얼 및 통찰력.",
+    "readMore": "더 읽기",
+    "posts": {
+      "1": {
+        "title": "ShadcnUIKit V2 소개",
+        "desc": "우리는 전체 라이브러리를 처음부터 다시 구축했습니다. 더 나은 성능, 더 많은 접근성 및 새로운 디자인 시스템.",
+        "category": "출시"
+      },
+      "2": {
+        "title": "접근 가능한 양식 구축",
+        "desc": "모든 사람에게 작동하는 양식을 만드는 방법에 대한 심층 분석. ARIA 레이블, 키보드 탐색 및 오류 처리에 대해 알아보십시오.",
+        "category": "튜토리얼"
+      },
+      "3": {
+        "title": "React 서버 구성 요소의 미래",
+        "desc": "서버 구성 요소가 웹 애플리케이션 구축 방식을 변경하는 방법. 2024년에 알아야 할 사항.",
+        "category": "의견"
+      }
+    }
+  }
+}

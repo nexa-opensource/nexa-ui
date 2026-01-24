@@ -1,0 +1,244 @@
+{
+  "Navbar": {
+    "docs": "Docs",
+    "components": "Components",
+    "themes": "Themes",
+    "showcase": "Showcase",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "searchPlaceholder": "Search components..."
+  },
+  "Hero": {
+    "badge": "Nexa UI Kit v2.0",
+    "titlePrefix": "Build your next idea",
+    "titleHighlight": "even faster.",
+    "description": "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+    "getStarted": "Get Started"
+  },
+  "LogoTicker": {
+    "trustedBy": "Trusted by innovative teams"
+  },
+  "Features": {
+    "titlePrefix": "Engineered for",
+    "titleHighlight": "Excellence",
+    "description": "We rethought the component library from the ground up. Here is what makes ShadcnUIKit different.",
+    "design": {
+      "title": "The Design System",
+      "description": "A complete, composable architecture for your product. Global tokens, unified colors, and consistent spacing."
+    },
+    "typeSafe": {
+      "title": "Type Safe",
+      "description": "Built with TypeScript for a superior developer experience. Autocomplete, validation, and zero runtime errors."
+    },
+    "responsive": {
+      "title": "Responsive",
+      "description": "Mobile-first architecture ensuring your app looks perfect on phones, tablets, and desktops automatically."
+    },
+    "performance": {
+      "title": "Performance",
+      "description": "Optimized for speed with zero-runtime overhead. Components compile to standard React & CSS."
+    }
+  },
+  "InteractivePreview": {
+    "headerTitle": "Dashboard Experience",
+    "headerDescription": "A fully functional, responsive dashboard layout demonstrating the power of our components."
+  },
+  "Footer": {
+    "description": "Beautifully designed components built with Radix UI and Tailwind CSS. Open source and free to use in your applications.",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "components": "Components",
+    "themes": "Themes",
+    "pricing": "Pricing",
+    "showcase": "Showcase",
+    "documentation": "Documentation",
+    "blog": "Blog",
+    "community": "Community",
+    "helpCenter": "Help Center",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "license": "License",
+    "rights": "© 2026 NexaUIKit. All rights reserved.",
+    "status": "All systems operational"
+  },
+  "Docs": {
+    "sidebar": {
+      "gettingStarted": "Getting Started",
+      "introduction": "Introduction",
+      "installation": "Installation",
+      "theming": "Theming",
+      "examples": "Examples",
+      "components": "Components",
+      "hooks": "Hooks"
+    },
+    "main": {
+      "title": "Documentation",
+      "subtitle": "Welcome to the comprehensive documentation for ShadcnUIKit. Here you will find detailed guides, component APIs, and practical examples to help you build better applications faster.",
+      "installation": "Installation",
+      "installationDesc": "Get up and running in minutes.",
+      "theming": "Theming",
+      "themingDesc": "Customize every aspect of your app.",
+      "themingContent": "Built with CSS Variables & Tailwind.",
+      "openSource": "Our library is designed to be copy-pasted into your project. We don't believe in locking you into a specific dependency. You own the code. You can customize it, extend it, and make it your own.",
+      "onThisPage": "On This Page"
+    },
+    "examples": {
+      "button": {
+        "title": "Button Component",
+        "desc": "Displays a button or a component that looks like a button."
+      },
+      "hook": {
+        "title": "useToast Hook",
+        "desc": "A powerful hook to manage toast notifications."
+      },
+      "theme": {
+        "title": "Theming",
+        "desc": "Use CSS variables for robust theming capabilities."
+      }
+    },
+    "backToHome": "Back to Home"
+  },
+  "ComponentsPage": {
+    "title": "Components",
+    "subtitle": "Beautifully designed, accessible components. Copy and paste into your apps.",
+    "cards": {
+      "card": {
+        "title": "Card",
+        "desc": "Container for grouping related content.",
+        "notificationTitle": "Notification",
+        "notificationDesc": "You have a new message."
+      },
+      "button": {
+        "title": "Button",
+        "desc": "Triggers an event or action."
+      },
+      "input": {
+        "title": "Input",
+        "desc": "Form controls for user input."
+      },
+      "badge": {
+        "title": "Badge",
+        "desc": "Displays a status or value."
+      },
+      "avatar": {
+        "title": "Avatar",
+        "desc": "Image element for user profiles."
+      },
+      "interactive": {
+        "title": "Interactive",
+        "desc": "Components with state.",
+        "airplaneMode": "Airplane Mode",
+        "volume": "Volume"
+      }
+    }
+  },
+  "Themes": {
+    "title": "Theme Customizer",
+    "subtitle": "Customize your UI experience. Pick a style and color for your components.",
+    "sponsor": "THEME SPONSOR",
+    "sponsorDesc": "Showcase your brand here",
+    "sidebar": {
+      "color": "Color",
+      "mode": "Mode",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "preview": {
+      "dashboard": "Dashboard",
+      "overview": "Overview of your project activity.",
+      "totalRevenue": "Total Revenue",
+      "activeUsers": "Active Users",
+      "lastMonth": "from last month",
+      "formElements": "Form Elements",
+      "primaryButton": "Primary Button",
+      "secondaryButton": "Secondary",
+      "outlineButton": "Outline",
+      "destructiveButton": "Destructive"
+    }
+  },
+  "Showcase": {
+    "title": "Built with",
+    "subtitle": "Discover the incredible applications developers are building. From enterprise dashboards to creative portfolios.",
+    "communityGallery": "Community Gallery",
+    "submit": "Submit Project",
+    "viewDocs": "View Documentation",
+    "visit": "Visit Website",
+    "categories": {
+      "All": "All",
+      "SaaS": "SaaS",
+      "E-commerce": "E-commerce",
+      "Portfolio": "Portfolio",
+      "Dashboard": "Dashboard"
+    }
+  },
+  "Pricing": {
+    "title": "Simple, transparent pricing",
+    "subtitle": "Choose the perfect plan for your project. All plans include access to our core components.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "save20": "(Save 20%)",
+    "month": "month",
+    "popular": "Most Popular",
+    "plans": {
+      "hobby": {
+        "name": "Hobby",
+        "desc": "Perfect for personal projects.",
+        "button": "Get Started",
+        "features": {
+          "access": "Access to all core components",
+          "community": "Community support",
+          "basic": "Basic theming",
+          "charts": "Advanced charts",
+          "priority": "Priority support"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "For professional developers.",
+        "button": "Subscribe Now",
+        "features": {
+          "everythingHobby": "Everything in Hobby",
+          "charts": "Advanced charts & maps",
+          "multiple": "Multiple themes",
+          "priority": "Priority email support",
+          "remove": "Removing attribution"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "For large teams and organizations.",
+        "button": "Contact Sales",
+        "features": {
+          "everythingPro": "Everything in Pro",
+          "unlimited": "Unlimited projects",
+          "dedicated": "Dedicated support channel",
+          "custom": "Custom component requests",
+          "sla": "SLA & Contracts"
+        }
+      }
+    }
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Updates, tutorials, and insights from the team.",
+    "readMore": "Read more",
+    "posts": {
+      "1": {
+        "title": "Introducing ShadcnUIKit V2",
+        "desc": "We've rebuilt the entire library from the ground up. Better performance, more accessibility, and a brand new design system.",
+        "category": "Release"
+      },
+      "2": {
+        "title": "Building Accessible Forms",
+        "desc": "A deep dive into creating forms that work for everyone. Learn about ARIA labels, keyboard navigation, and error handling.",
+        "category": "Tutorial"
+      },
+      "3": {
+        "title": "The Future of React Server Components",
+        "desc": "How server components are changing the way we build web applications. What you need to know for 2024.",
+        "category": "Opinion"
+      }
+    }
+  }
+}

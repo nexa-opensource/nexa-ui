@@ -15,23 +15,72 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
-import { pricingPlans } from "@/data/pricing";
+import { useTranslations } from "next-intl";
 
 export default function PricingPage() {
+  const t = useTranslations("Pricing");
   const [isAnnual, setIsAnnual] = useState(false);
+
+  // Define plans inside component to use translation hook
+  const pricingPlans = [
+    {
+      id: "hobby",
+      name: t("plans.hobby.name"),
+      description: t("plans.hobby.desc"),
+      monthlyPrice: 0,
+      yearlyPrice: 0,
+      buttonText: t("plans.hobby.button"),
+      buttonVariant: "outline" as const,
+      features: [
+        { text: t("plans.hobby.features.access"), included: true },
+        { text: t("plans.hobby.features.community"), included: true },
+        { text: t("plans.hobby.features.basic"), included: true },
+        { text: t("plans.hobby.features.charts"), included: false },
+        { text: t("plans.hobby.features.priority"), included: false },
+      ],
+    },
+    {
+      id: "pro",
+      name: t("plans.pro.name"),
+      description: t("plans.pro.desc"),
+      monthlyPrice: 15,
+      yearlyPrice: 12,
+      buttonText: t("plans.pro.button"),
+      buttonVariant: "default" as const,
+      isPopular: true,
+      features: [
+        { text: t("plans.pro.features.everythingHobby"), included: true },
+        { text: t("plans.pro.features.charts"), included: true },
+        { text: t("plans.pro.features.multiple"), included: true },
+        { text: t("plans.pro.features.priority"), included: true },
+        { text: t("plans.pro.features.remove"), included: true },
+      ],
+    },
+    {
+      id: "enterprise",
+      name: t("plans.enterprise.name"),
+      description: t("plans.enterprise.desc"),
+      monthlyPrice: 49,
+      yearlyPrice: 49,
+      buttonText: t("plans.enterprise.button"),
+      buttonVariant: "outline" as const,
+      features: [
+        { text: t("plans.enterprise.features.everythingPro"), included: true },
+        { text: t("plans.enterprise.features.unlimited"), included: true },
+        { text: t("plans.enterprise.features.dedicated"), included: true },
+        { text: t("plans.enterprise.features.custom"), included: true },
+        { text: t("plans.enterprise.features.sla"), included: true },
+      ],
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <div className="container-fluid px-4 md:px-8 py-24 space-y-12 max-w-[1600px] mx-auto">
         <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <h1 className="text-4xl font-bold tracking-tight">
-            Simple, transparent pricing
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            Choose the perfect plan for your project. All plans include access
-            to our core components.
-          </p>
+          <h1 className="text-4xl font-bold tracking-tight">{t("title")}</h1>
+          <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
 
           <div className="flex items-center justify-center gap-4 pt-4">
             <Label
@@ -40,7 +89,7 @@ export default function PricingPage() {
                 !isAnnual ? "text-foreground" : "text-muted-foreground"
               }
             >
-              Monthly
+              {t("monthly")}
             </Label>
             <Switch
               id="billing-toggle"
@@ -51,9 +100,9 @@ export default function PricingPage() {
               htmlFor="billing-toggle"
               className={isAnnual ? "text-foreground" : "text-muted-foreground"}
             >
-              Yearly{" "}
+              {t("yearly")}{" "}
               <span className="text-xs text-green-500 font-medium ml-1">
-                (Save 20%)
+                {t("save20")}
               </span>
             </Label>
           </div>
@@ -70,7 +119,7 @@ export default function PricingPage() {
               {plan.isPopular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <Badge className="bg-primary text-primary-foreground hover:bg-primary">
-                    Most Popular
+                    {t("popular")}
                   </Badge>
                 </div>
               )}
@@ -84,7 +133,7 @@ export default function PricingPage() {
                       ? plan.yearlyPrice
                       : plan.monthlyPrice}
                   </span>
-                  <span className="text-muted-foreground">/month</span>
+                  <span className="text-muted-foreground">/{t("month")}</span>
                 </div>
               </CardHeader>
               <CardContent className="flex-1">

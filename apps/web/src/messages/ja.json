@@ -1,0 +1,244 @@
+{
+  "Navbar": {
+    "docs": "ドキュメント",
+    "components": "コンポーネント",
+    "themes": "テーマ",
+    "showcase": "ショーケース",
+    "pricing": "価格",
+    "blog": "ブログ",
+    "searchPlaceholder": "コンポーネントを検索..."
+  },
+  "Hero": {
+    "badge": "Nexa UI Kit v2.0",
+    "titlePrefix": "次のアイデアを",
+    "titleHighlight": "さらに速く構築。",
+    "description": "アプリにコピー＆ペーストできる美しくデザインされたコンポーネント。アクセシビリティ対応。カスタマイズ可能。オープンソース。",
+    "getStarted": "始める"
+  },
+  "LogoTicker": {
+    "trustedBy": "革新的なチームから信頼されています"
+  },
+  "Features": {
+    "titlePrefix": "卓越性のために",
+    "titleHighlight": "設計されています",
+    "description": "コンポーネントライブラリをゼロから再考しました。ShadcnUIKitの違いはここにあります。",
+    "design": {
+      "title": "デザインシステム",
+      "description": "製品のための完全で構成可能なアーキテクチャ。グローバルトークン、統一された色、一貫した間隔。"
+    },
+    "typeSafe": {
+      "title": "型安全",
+      "description": "優れた開発者体験のためにTypeScriptで構築されています。オートコンプリート、検証、ランタイムエラーなし。"
+    },
+    "responsive": {
+      "title": "レスポンシブ",
+      "description": "モバイルファーストのアーキテクチャにより、アプリは携帯電話、タブレット、デスクトップで自動的に完璧に見えます。"
+    },
+    "performance": {
+      "title": "パフォーマンス",
+      "description": "ランタイムオーバーヘッドなしで速度を最適化。コンポーネントは標準のReactとCSSにコンパイルされます。"
+    }
+  },
+  "InteractivePreview": {
+    "headerTitle": "ダッシュボード体験",
+    "headerDescription": "コンポーネントの機能を実証する、完全に機能するレスポンシブなダッシュボードレイアウト。"
+  },
+  "Footer": {
+    "description": "Radix UIとTailwind CSSで構築された美しくデザインされたコンポーネント。オープンソースで、アプリケーションで無料で使用できます。",
+    "product": "製品",
+    "resources": "リソース",
+    "legal": "法務",
+    "components": "コンポーネント",
+    "themes": "テーマ",
+    "pricing": "価格",
+    "showcase": "ショーケース",
+    "documentation": "ドキュメント",
+    "blog": "ブログ",
+    "community": "コミュニティ",
+    "helpCenter": "ヘルプセンター",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "license": "ライセンス",
+    "rights": "© 2026 NexaUIKit. All rights reserved.",
+    "status": "全システム稼働中"
+  },
+  "Docs": {
+    "sidebar": {
+      "gettingStarted": "始める",
+      "introduction": "はじめに",
+      "installation": "インストール",
+      "theming": "テーマ設定",
+      "examples": "例",
+      "components": "コンポーネント",
+      "hooks": "フック"
+    },
+    "main": {
+      "title": "ドキュメント",
+      "subtitle": "ShadcnUIKitの包括的なドキュメントへようこそ。ここでは、より良いアプリケーションをより速く構築するのに役立つ詳細なガイド、コンポーネントAPI、実用的な例を見つけることができます。",
+      "installation": "インストール",
+      "installationDesc": "数分でセットアップして実行できます。",
+      "theming": "テーマ設定",
+      "themingDesc": "アプリのあらゆる側面をカスタマイズします。",
+      "themingContent": "CSS変数とTailwindで構築されています。",
+      "openSource": "私たちのライブラリは、プロジェクトにコピー＆ペーストするように設計されています。特定の依存関係にロックインされることは信じていません。コードはあなたが所有します。カスタマイズ、拡張、そして自分のものにすることができます。",
+      "onThisPage": "このページの内容"
+    },
+    "examples": {
+      "button": {
+        "title": "ボタンコンポーネント",
+        "desc": "ボタンまたはボタンのように見えるコンポーネントを表示します。"
+      },
+      "hook": {
+        "title": "useToast フック",
+        "desc": "トースト通知を管理するための強力なフック。"
+      },
+      "theme": {
+        "title": "テーマ設定",
+        "desc": "堅牢なテーマ設定機能のためにCSS変数を使用します。"
+      }
+    },
+    "backToHome": "ホームに戻る"
+  },
+  "ComponentsPage": {
+    "title": "コンポーネント",
+    "subtitle": "美しくデザインされた、アクセシビリティ対応のコンポーネント。アプリにコピーして貼り付けます。",
+    "cards": {
+      "card": {
+        "title": "カード",
+        "desc": "関連するコンテンツをグループ化するためのコンテナ。",
+        "notificationTitle": "通知",
+        "notificationDesc": "新しいメッセージがあります。"
+      },
+      "button": {
+        "title": "ボタン",
+        "desc": "イベントまたはアクションをトリガーします。"
+      },
+      "input": {
+        "title": "入力",
+        "desc": "ユーザー入力のためのフォームコントロール。"
+      },
+      "badge": {
+        "title": "バッジ",
+        "desc": "ステータスまたは値を表示します。"
+      },
+      "avatar": {
+        "title": "アバター",
+        "desc": "ユーザープロファイルの画像要素。"
+      },
+      "interactive": {
+        "title": "インタラクティブ",
+        "desc": "状態を持つコンポーネント。",
+        "airplaneMode": "機内モード",
+        "volume": "音量"
+      }
+    }
+  },
+  "Themes": {
+    "title": "テーマカスタマイザー",
+    "subtitle": "UI体験をカスタマイズします。コンポーネントのスタイルと色を選択します。",
+    "sponsor": "テーマスポンサー",
+    "sponsorDesc": "ここにブランドを紹介します",
+    "sidebar": {
+      "color": "色",
+      "mode": "モード",
+      "light": "ライト",
+      "dark": "ダーク"
+    },
+    "preview": {
+      "dashboard": "ダッシュボード",
+      "overview": "プロジェクト活動の概要。",
+      "totalRevenue": "総収益",
+      "activeUsers": "アクティブユーザー",
+      "lastMonth": "先月から",
+      "formElements": "フォーム要素",
+      "primaryButton": "プライマリ",
+      "secondaryButton": "セカンダリ",
+      "outlineButton": "アウトライン",
+      "destructiveButton": "破壊的"
+    }
+  },
+  "Showcase": {
+    "title": "構築されたプロジェクト",
+    "subtitle": "開発者が構築している素晴らしいアプリケーションを発見してください。エンタープライズダッシュボードからクリエイティブなポートフォリオまで。",
+    "communityGallery": "コミュニティギャラリー",
+    "submit": "プロジェクトを提出",
+    "viewDocs": "ドキュメントを見る",
+    "visit": "ウェブサイトを訪問",
+    "categories": {
+      "All": "すべて",
+      "SaaS": "SaaS",
+      "E-commerce": "Eコマース",
+      "Portfolio": "ポートフォリオ",
+      "Dashboard": "ダッシュボード"
+    }
+  },
+  "Pricing": {
+    "title": "シンプルで透明な価格設定",
+    "subtitle": "プロジェクトに最適なプランを選択してください。すべてのプランには、コアコンポーネントへのアクセスが含まれています。",
+    "monthly": "月次",
+    "yearly": "年次",
+    "save20": "(20%オフ)",
+    "month": "月",
+    "popular": "一番人気",
+    "plans": {
+      "hobby": {
+        "name": "趣味",
+        "desc": "個人プロジェクトに最適です。",
+        "button": "始める",
+        "features": {
+          "access": "すべてのコアコンポーネントへのアクセス",
+          "community": "コミュニティサポート",
+          "basic": "基本的なテーマ設定",
+          "charts": "高度なチャート",
+          "priority": "優先サポート"
+        }
+      },
+      "pro": {
+        "name": "プロ",
+        "desc": "プロの開発者向け。",
+        "button": "今すぐ購読",
+        "features": {
+          "everythingHobby": "趣味プランのすべて",
+          "charts": "高度なチャートとマップ",
+          "multiple": "複数のテーマ",
+          "priority": "優先メールサポート",
+          "remove": "帰属表示の削除"
+        }
+      },
+      "enterprise": {
+        "name": "エンタープライズ",
+        "desc": "大規模なチームや組織向け。",
+        "button": "営業に連絡",
+        "features": {
+          "everythingPro": "プロプランのすべて",
+          "unlimited": "無制限のプロジェクト",
+          "dedicated": "専用サポートチャンネル",
+          "custom": "カスタムコンポーネントリクエスト",
+          "sla": "SLAと契約"
+        }
+      }
+    }
+  },
+  "Blog": {
+    "title": "ブログ",
+    "subtitle": "チームからの最新情報、チュートリアル、洞察。",
+    "readMore": "続きを読む",
+    "posts": {
+      "1": {
+        "title": "ShadcnUIKit V2の紹介",
+        "desc": "ライブラリ全体をゼロから再構築しました。パフォーマンスの向上、アクセシビリティの向上、新しいデザインシステム。",
+        "category": "リリース"
+      },
+      "2": {
+        "title": "アクセシブルなフォームの構築",
+        "desc": "誰にでも機能するフォームを作成するための詳細な分析。ARIAラベル、キーボードナビゲーション、エラー処理について学びます。",
+        "category": "チュートリアル"
+      },
+      "3": {
+        "title": "React Server Componentsの未来",
+        "desc": "サーバーコンポーネントがWebアプリケーションの構築方法をどのように変えているか。2024年に知っておくべきこと。",
+        "category": "オピニオン"
+      }
+    }
+  }
+}

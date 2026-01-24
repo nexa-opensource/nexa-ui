@@ -8,7 +8,11 @@ interface BlogCardProps {
   post: BlogPost;
 }
 
+import { useTranslations } from "next-intl";
+
 export function BlogCard({ post }: BlogCardProps) {
+  const t = useTranslations("Blog");
+
   return (
     <Link href={`/blog/${post.id}`} className="group cursor-pointer">
       <article className="flex flex-col gap-4 h-full">
@@ -49,7 +53,7 @@ export function BlogCard({ post }: BlogCardProps) {
             <span className="text-sm font-medium">{post.author.name}</span>
           </div>
           <div className="text-sm font-medium text-primary flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-            Read more <ArrowRight className="w-4 h-4" />
+            {t("readMore")} <ArrowRight className="w-4 h-4" />
           </div>
         </div>
       </article>

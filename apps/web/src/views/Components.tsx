@@ -20,7 +20,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import { motion } from "framer-motion";
 
+import { useTranslations } from "next-intl";
+
 export default function ComponentsPage() {
+  const t = useTranslations("ComponentsPage");
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -42,11 +46,8 @@ export default function ComponentsPage() {
         </div>
 
         <div className="text-center max-w-2xl mx-auto space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight">Components</h1>
-          <p className="text-xl text-muted-foreground">
-            Beautifully designed, accessible components. Copy and paste into
-            your apps.
-          </p>
+          <h1 className="text-4xl font-bold tracking-tight">{t("title")}</h1>
+          <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -58,19 +59,17 @@ export default function ComponentsPage() {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Card</CardTitle>
-                <CardDescription>
-                  Container for grouping related content.
-                </CardDescription>
+                <CardTitle>{t("cards.card.title")}</CardTitle>
+                <CardDescription>{t("cards.card.desc")}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
                   <div className="flex flex-col space-y-1.5 p-0">
                     <h3 className="font-semibold leading-none tracking-tight">
-                      Notification
+                      {t("cards.card.notificationTitle")}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      You have a new message.
+                      {t("cards.card.notificationDesc")}
                     </p>
                   </div>
                 </div>
@@ -86,8 +85,8 @@ export default function ComponentsPage() {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Button</CardTitle>
-                <CardDescription>Triggers an event or action.</CardDescription>
+                <CardTitle>{t("cards.button.title")}</CardTitle>
+                <CardDescription>{t("cards.button.desc")}</CardDescription>
               </CardHeader>
               <CardContent className="grid grid-cols-2 gap-2">
                 <Button>Default</Button>
@@ -108,8 +107,8 @@ export default function ComponentsPage() {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Input</CardTitle>
-                <CardDescription>Form controls for user input.</CardDescription>
+                <CardTitle>{t("cards.input.title")}</CardTitle>
+                <CardDescription>{t("cards.input.desc")}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -132,10 +131,11 @@ export default function ComponentsPage() {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Badge</CardTitle>
-                <CardDescription>Displays a status or value.</CardDescription>
+                <CardTitle>{t("cards.badge.title")}</CardTitle>
+                <CardDescription>{t("cards.badge.desc")}</CardDescription>
               </CardHeader>
               <CardContent className="flex flex-wrap gap-2">
+                {/* ... badges as is ... */}
                 <Badge>Default</Badge>
                 <Badge variant="secondary">Secondary</Badge>
                 <Badge variant="outline">Outline</Badge>
@@ -152,10 +152,8 @@ export default function ComponentsPage() {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Avatar</CardTitle>
-                <CardDescription>
-                  Image element for user profiles.
-                </CardDescription>
+                <CardTitle>{t("cards.avatar.title")}</CardTitle>
+                <CardDescription>{t("cards.avatar.desc")}</CardDescription>
               </CardHeader>
               <CardContent className="flex items-center gap-4">
                 <Avatar>
@@ -181,16 +179,18 @@ export default function ComponentsPage() {
           >
             <Card className="h-full">
               <CardHeader>
-                <CardTitle>Interactive</CardTitle>
-                <CardDescription>Components with state.</CardDescription>
+                <CardTitle>{t("cards.interactive.title")}</CardTitle>
+                <CardDescription>{t("cards.interactive.desc")}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-center justify-between space-x-2">
-                  <Label htmlFor="airplane-mode">Airplane Mode</Label>
+                  <Label htmlFor="airplane-mode">
+                    {t("cards.interactive.airplaneMode")}
+                  </Label>
                   <Switch id="airplane-mode" />
                 </div>
                 <div className="space-y-2">
-                  <Label>Volume</Label>
+                  <Label>{t("cards.interactive.volume")}</Label>
                   <Slider defaultValue={[50]} max={100} step={1} />
                 </div>
               </CardContent>

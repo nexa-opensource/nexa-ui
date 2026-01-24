@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
 import {
   Package2,
@@ -17,11 +17,14 @@ import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import Logo from "@/assets/images/logo-brandmark.png";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const t = useTranslations("Navbar");
 
   useEffect(() => {
     setMounted(true);
@@ -73,37 +76,37 @@ export function Navbar() {
               href="/docs"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
-              Docs
+              {t("docs")}
             </Link>
             <Link
               href="/components"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
-              Components
+              {t("components")}
             </Link>
             <Link
               href="/themes"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
-              Themes
+              {t("themes")}
             </Link>
             <Link
               href="/showcase"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
-              Showcase
+              {t("showcase")}
             </Link>
             <Link
               href="/pricing"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
-              Pricing
+              {t("pricing")}
             </Link>
             <Link
               href="/blog"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
-              Blog
+              {t("blog")}
             </Link>
           </nav>
         </div>
@@ -114,7 +117,7 @@ export function Navbar() {
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
             <input
               type="text"
-              placeholder="Search components..."
+              placeholder={t("searchPlaceholder")}
               className="w-full h-9 rounded-md border border-input bg-muted/50 px-9 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
             />
             <div className="absolute right-2 top-2 flex items-center gap-0.5 text-xs text-muted-foreground border px-1.5 rounded bg-background">
@@ -137,7 +140,7 @@ export function Navbar() {
           <SheetContent side="left" className="pr-0">
             <Link href="/" className="flex items-center space-x-2">
               <Package2 className="h-6 w-6" />
-              <span className="font-bold">ShadcnUIKit</span>
+              <span className="font-bold">NexaUIKit</span>
             </Link>
             <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
               <div className="flex flex-col space-y-3">
@@ -145,37 +148,37 @@ export function Navbar() {
                   href="/docs"
                   className="text-foreground/70 transition-colors hover:text-foreground"
                 >
-                  Documentation
+                  {t("docs")}
                 </Link>
                 <Link
                   href="/components"
                   className="text-foreground/70 transition-colors hover:text-foreground"
                 >
-                  Components
+                  {t("components")}
                 </Link>
                 <Link
                   href="/themes"
                   className="text-foreground/70 transition-colors hover:text-foreground"
                 >
-                  Themes
+                  {t("themes")}
                 </Link>
                 <Link
                   href="/showcase"
                   className="text-foreground/70 transition-colors hover:text-foreground"
                 >
-                  Showcase
+                  {t("showcase")}
                 </Link>
                 <Link
                   href="/pricing"
                   className="text-foreground/70 transition-colors hover:text-foreground"
                 >
-                  Pricing
+                  {t("pricing")}
                 </Link>
                 <Link
                   href="/blog"
                   className="text-foreground/70 transition-colors hover:text-foreground"
                 >
-                  Blog
+                  {t("blog")}
                 </Link>
               </div>
             </div>
@@ -190,6 +193,7 @@ export function Navbar() {
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
+            <LanguageSwitcher />
             <Button variant="ghost" className="w-9 px-0" onClick={toggleTheme}>
               <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

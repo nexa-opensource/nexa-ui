@@ -1,0 +1,244 @@
+{
+  "Navbar": {
+    "docs": "文档",
+    "components": "组件",
+    "themes": "主题",
+    "showcase": "展示",
+    "pricing": "定价",
+    "blog": "博客",
+    "searchPlaceholder": "搜索组件..."
+  },
+  "Hero": {
+    "badge": "Nexa UI Kit v2.0",
+    "titlePrefix": "更快地构建",
+    "titleHighlight": "您的下一个想法。",
+    "description": "设计精美的组件，您可以直接将其复制并粘贴到您的应用程序中。无障碍。可定制。开源。",
+    "getStarted": "开始使用"
+  },
+  "LogoTicker": {
+    "trustedBy": "受到创新团队的信任"
+  },
+  "Features": {
+    "titlePrefix": "专为",
+    "titleHighlight": "卓越而设计",
+    "description": "我们从头开始重新思考了组件库。这就是 ShadcnUIKit 的不同之处。",
+    "design": {
+      "title": "设计系统",
+      "description": "为您的产品提供的完整、可组合的架构。全局令牌、统一颜色和一致的间距。"
+    },
+    "typeSafe": {
+      "title": "类型安全",
+      "description": "使用 TypeScript 构建，带来卓越的开发体验。自动完成、验证和零运行时错误。"
+    },
+    "responsive": {
+      "title": "响应式",
+      "description": "移动优先的架构，确保您的应用在手机、平板电脑和桌面上自动看起来完美无瑕。"
+    },
+    "performance": {
+      "title": "性能",
+      "description": "优化速度，无运行时开销。组件编译为标准 React 和 CSS。"
+    }
+  },
+  "InteractivePreview": {
+    "headerTitle": "仪表板体验",
+    "headerDescription": "一个功能齐全、响应式的仪表板布局，展示了我们组件的强大功能。"
+  },
+  "Footer": {
+    "description": "使用 Radix UI 和 Tailwind CSS 构建的设计精美的组件。开源并在您的应用程序中免费使用。",
+    "product": "产品",
+    "resources": "资源",
+    "legal": "法律",
+    "components": "组件",
+    "themes": "主题",
+    "pricing": "定价",
+    "showcase": "展示",
+    "documentation": "文档",
+    "blog": "博客",
+    "community": "社区",
+    "helpCenter": "帮助中心",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "license": "许可证",
+    "rights": "© 2026 NexaUIKit. 保留所有权利。",
+    "status": "所有系统运行正常"
+  },
+  "Docs": {
+    "sidebar": {
+      "gettingStarted": "开始使用",
+      "introduction": "介绍",
+      "installation": "安装",
+      "theming": "主题",
+      "examples": "示例",
+      "components": "组件",
+      "hooks": "Hooks"
+    },
+    "main": {
+      "title": "文档",
+      "subtitle": "欢迎阅读 ShadcnUIKit 的综合文档。在这里，您将找到详细的指南、组件 API 和实用示例，帮助您更快地构建更好的应用程序。",
+      "installation": "安装",
+      "installationDesc": "几分钟内即可设置并运行。",
+      "theming": "主题",
+      "themingDesc": "自定义应用的各个方面。",
+      "themingContent": "使用 CSS Variables 和 Tailwind 构建。",
+      "openSource": "我们的库旨在复制粘贴到您的项目中。我们不相信将您锁定在特定的依赖项中。您拥有代码。您可以自定义、扩展它并使其成为您自己的代码。",
+      "onThisPage": "本页内容"
+    },
+    "examples": {
+      "button": {
+        "title": "按钮组件",
+        "desc": "显示一个按钮或看起来像按钮的组件。"
+      },
+      "hook": {
+        "title": "useToast Hook",
+        "desc": "一个强大的 hook，用于管理 toast 通知。"
+      },
+      "theme": {
+        "title": "主题",
+        "desc": "使用 CSS 变量实现强大的主题功能。"
+      }
+    },
+    "backToHome": "返回首页"
+  },
+  "ComponentsPage": {
+    "title": "组件",
+    "subtitle": "设计精美，易于访问的组件。复制并粘贴到您的应用中。",
+    "cards": {
+      "card": {
+        "title": "卡片",
+        "desc": "用于分组相关内容的容器。",
+        "notificationTitle": "通知",
+        "notificationDesc": "您有一条新消息。"
+      },
+      "button": {
+        "title": "按钮",
+        "desc": "触发事件或操作。"
+      },
+      "input": {
+        "title": "输入",
+        "desc": "用于用户输入的表单控件。"
+      },
+      "badge": {
+        "title": "徽章",
+        "desc": "显示状态或值。"
+      },
+      "avatar": {
+        "title": "头像",
+        "desc": "用于用户个人资料的图像元素。"
+      },
+      "interactive": {
+        "title": "互动",
+        "desc": "具有状态的组件。",
+        "airplaneMode": "飞行模式",
+        "volume": "音量"
+      }
+    }
+  },
+  "Themes": {
+    "title": "主题定制器",
+    "subtitle": "定制您的UI体验。为您的组件选择风格和颜色。",
+    "sponsor": "主题赞助商",
+    "sponsorDesc": "在此展示您的品牌",
+    "sidebar": {
+      "color": "颜色",
+      "mode": "模式",
+      "light": "浅色",
+      "dark": "深色"
+    },
+    "preview": {
+      "dashboard": "仪表板",
+      "overview": "项目活动概览。",
+      "totalRevenue": "总收入",
+      "activeUsers": "活跃用户",
+      "lastMonth": "较上月",
+      "formElements": "表单元素",
+      "primaryButton": "主要",
+      "secondaryButton": "次要",
+      "outlineButton": "轮廓",
+      "destructiveButton": "破坏性"
+    }
+  },
+  "Showcase": {
+    "title": "构建案例",
+    "subtitle": "探索开发者构建的令人难以置信的应用程序。从企业仪表板到创意作品集。",
+    "communityGallery": "社区画廊",
+    "submit": "提交项目",
+    "viewDocs": "查看文档",
+    "visit": "访问网站",
+    "categories": {
+      "All": "全部",
+      "SaaS": "SaaS",
+      "E-commerce": "电子商务",
+      "Portfolio": "作品集",
+      "Dashboard": "仪表板"
+    }
+  },
+  "Pricing": {
+    "title": "简单、透明的定价",
+    "subtitle": "为您的项目选择完美的计划。所有计划都包括访问我们的核心组件。",
+    "monthly": "按月",
+    "yearly": "按年",
+    "save20": "（省20%）",
+    "month": "月",
+    "popular": "最受欢迎",
+    "plans": {
+      "hobby": {
+        "name": "业余爱好",
+        "desc": "适合个人项目。",
+        "button": "开始使用",
+        "features": {
+          "access": "访问所有核心组件",
+          "community": "社区支持",
+          "basic": "基本主题",
+          "charts": "高级图表",
+          "priority": "优先支持"
+        }
+      },
+      "pro": {
+        "name": "专业版",
+        "desc": "适合专业开发者。",
+        "button": "立即订阅",
+        "features": {
+          "everythingHobby": "包含业余爱好版所有内容",
+          "charts": "高级图表和地图",
+          "multiple": "多个主题",
+          "priority": "优先电子邮件支持",
+          "remove": "移除归属"
+        }
+      },
+      "enterprise": {
+        "name": "企业版",
+        "desc": "适合大型团队和组织。",
+        "button": "联系销售",
+        "features": {
+          "everythingPro": "包含专业版所有内容",
+          "unlimited": "无限项目",
+          "dedicated": "专属支持渠道",
+          "custom": "定制组件请求",
+          "sla": "SLA与合同"
+        }
+      }
+    }
+  },
+  "Blog": {
+    "title": "博客",
+    "subtitle": "来自团队的更新、教程和见解。",
+    "readMore": "阅读更多",
+    "posts": {
+      "1": {
+        "title": "介绍 ShadcnUIKit V2",
+        "desc": "我们从头开始重建了整个库。更好的性能、更多的可访问性和全新的设计系统。",
+        "category": "发布"
+      },
+      "2": {
+        "title": "构建可访问表单",
+        "desc": "深入探讨如何创建适合所有人的表单。了解ARIA标签、键盘导航和错误处理。",
+        "category": "教程"
+      },
+      "3": {
+        "title": "React Server Components的未来",
+        "desc": "服务器组件如何改变我们构建Web应用程序的方式。2024年你需要知道的事。",
+        "category": "观点"
+      }
+    }
+  }
+}

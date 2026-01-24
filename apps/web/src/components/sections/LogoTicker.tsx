@@ -13,14 +13,18 @@ const logos = [
   "Nebula",
 ];
 
+import { useTranslations } from "next-intl";
+
 export function LogoTicker() {
+  const t = useTranslations("LogoTicker");
+
   return (
     <section className="py-16 border-y bg-background/50 backdrop-blur-sm overflow-hidden relative">
       <div className="absolute inset-0 bg-grid-small-black/[0.05] dark:bg-grid-small-white/[0.05] -z-10" />
 
       <div className="container mx-auto flex flex-col items-center gap-8 text-center">
         <span className="text-sm font-medium text-muted-foreground uppercase tracking-widest opacity-70">
-          Trusted by innovative teams
+          {t("trustedBy")}
         </span>
 
         <div className="w-full overflow-hidden relative max-w-5xl mx-auto mask-gradient-x">

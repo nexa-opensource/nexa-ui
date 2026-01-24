@@ -85,10 +85,13 @@ const showcaseItems = [
   },
 ];
 
-const categories = ["All", "SaaS", "E-commerce", "Portfolio", "Dashboard"];
+import { useTranslations } from "next-intl";
 
 export default function ShowcasePage() {
+  const t = useTranslations("Showcase");
   const [activeCategory, setActiveCategory] = useState("All");
+
+  const categories = ["All", "SaaS", "E-commerce", "Portfolio", "Dashboard"];
 
   return (
     <div className="min-h-screen bg-background selection:bg-primary/20">
@@ -104,7 +107,7 @@ export default function ShowcasePage() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary/10 text-primary hover:bg-primary/20"
           >
-            Community Gallery
+            {t("communityGallery")}
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -112,7 +115,7 @@ export default function ShowcasePage() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl font-bold tracking-tighter"
           >
-            Built with{" "}
+            {t("title")}{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600">
               ShadcnUIKit
             </span>
@@ -123,8 +126,7 @@ export default function ShowcasePage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-muted-foreground max-w-[800px] mx-auto leading-relaxed"
           >
-            Discover the incredible applications developers are building. From
-            enterprise dashboards to creative portfolios.
+            {t("subtitle")}
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -133,10 +135,10 @@ export default function ShowcasePage() {
             className="flex justify-center gap-4 pt-4"
           >
             <Button size="lg" className="rounded-full">
-              <Github className="mr-2 h-4 w-4" /> Submit Project
+              <Github className="mr-2 h-4 w-4" /> {t("submit")}
             </Button>
             <Button size="lg" variant="outline" className="rounded-full">
-              View Documentation
+              {t("viewDocs")}
             </Button>
           </motion.div>
         </div>
@@ -155,7 +157,7 @@ export default function ShowcasePage() {
                 : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
             )}
           >
-            {category}
+            {t(`categories.${category}`)}
           </button>
         ))}
       </div>

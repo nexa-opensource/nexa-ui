@@ -1,9 +1,13 @@
 "use client";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { Package2, Github, Twitter, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Logo from "@/assets/images/logo-brandmark.png";
+import { useTranslations } from "next-intl";
+
 export function Footer() {
+  const t = useTranslations("Footer");
+
   return (
     <footer className="border-t bg-muted/10">
       <div className="container mx-auto py-16">
@@ -16,8 +20,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground text-sm max-w-xs mb-6">
-              Beautifully designed components built with Radix UI and Tailwind
-              CSS. Open source and free to use in your applications.
+              {t("description")}
             </p>
             <div className="flex gap-4">
               <a
@@ -42,14 +45,14 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Product</h3>
+            <h3 className="font-bold mb-4">{t("product")}</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <Link
                   href="/components"
                   className="hover:text-foreground transition-colors"
                 >
-                  Components
+                  {t("components")}
                 </Link>
               </li>
               <li>
@@ -57,7 +60,7 @@ export function Footer() {
                   href="/themes"
                   className="hover:text-foreground transition-colors"
                 >
-                  Themes
+                  {t("themes")}
                 </Link>
               </li>
               <li>
@@ -65,7 +68,7 @@ export function Footer() {
                   href="/pricing"
                   className="hover:text-foreground transition-colors"
                 >
-                  Pricing
+                  {t("pricing")}
                 </Link>
               </li>
               <li>
@@ -73,21 +76,21 @@ export function Footer() {
                   href="/showcase"
                   className="hover:text-foreground transition-colors"
                 >
-                  Showcase
+                  {t("showcase")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Resources</h3>
+            <h3 className="font-bold mb-4">{t("resources")}</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <Link
                   href="/docs"
                   className="hover:text-foreground transition-colors"
                 >
-                  Documentation
+                  {t("documentation")}
                 </Link>
               </li>
               <li>
@@ -95,31 +98,31 @@ export function Footer() {
                   href="/blog"
                   className="hover:text-foreground transition-colors"
                 >
-                  Blog
+                  {t("blog")}
                 </Link>
               </li>
               <li>
                 <a href="#" className="hover:text-foreground transition-colors">
-                  Community
+                  {t("community")}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-foreground transition-colors">
-                  Help Center
+                  {t("helpCenter")}
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Legal</h3>
+            <h3 className="font-bold mb-4">{t("legal")}</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <Link
                   href="/privacy"
                   className="hover:text-foreground transition-colors"
                 >
-                  Privacy Policy
+                  {t("privacy")}
                 </Link>
               </li>
               <li>
@@ -127,7 +130,7 @@ export function Footer() {
                   href="/terms"
                   className="hover:text-foreground transition-colors"
                 >
-                  Terms of Service
+                  {t("terms")}
                 </Link>
               </li>
               <li>
@@ -135,7 +138,7 @@ export function Footer() {
                   href="/license"
                   className="hover:text-foreground transition-colors"
                 >
-                  License
+                  {t("license")}
                 </Link>
               </li>
             </ul>
@@ -143,10 +146,10 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© 2026 NexaUIKit. All rights reserved.</p>
+          <p>{t("rights")}</p>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-500"></span>
-            All systems operational
+            {t("status")}
           </div>
         </div>
       </div>

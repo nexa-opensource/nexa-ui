@@ -76,7 +76,10 @@ const recentSales = [
   },
 ];
 
+import { useTranslations } from "next-intl";
+
 export function InteractivePreview() {
+  const t = useTranslations("InteractivePreview");
   const [activeView, setActiveView] = useState("overview");
 
   return (
@@ -85,11 +88,10 @@ export function InteractivePreview() {
 
       <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">
-          Dashboard Experience
+          {t("headerTitle")}
         </h2>
         <p className="text-muted-foreground text-lg">
-          A fully functional, responsive dashboard layout demonstrating the
-          power of our components.
+          {t("headerDescription")}
         </p>
       </div>
 

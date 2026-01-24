@@ -17,7 +17,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
+import { useTranslations } from "next-intl";
+
 export function Hero() {
+  const t = useTranslations("Hero");
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -62,7 +65,7 @@ export function Hero() {
               className="inline-flex items-center rounded-full border bg-background/50 backdrop-blur-sm px-3 py-1 text-sm text-muted-foreground"
             >
               <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-              <span className="font-medium">Nexa UI Kit v2.0</span>
+              <span className="font-medium">{t("badge")}</span>
             </motion.div>
 
             <motion.h1
@@ -71,9 +74,9 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-5xl md:text-7xl font-bold tracking-tighter text-foreground"
             >
-              Build your next idea <br />
+              {t("titlePrefix")} <br />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-500 to-teal-600">
-                even faster.
+                {t("titleHighlight")}
               </span>
             </motion.h1>
 
@@ -83,8 +86,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-muted-foreground max-w-[600px] mx-auto lg:mx-0 leading-relaxed"
             >
-              Beautifully designed components that you can copy and paste into
-              your apps. Accessible. Customizable. Open Source.
+              {t("description")}
             </motion.p>
 
             <motion.div
@@ -97,7 +99,7 @@ export function Hero() {
                 size="lg"
                 className="h-12 px-8 text-base gap-2 rounded-full shadow-lg hover:shadow-primary/20 transition-all"
               >
-                Get Started <ArrowRight className="h-4 w-4" />
+                {t("getStarted")} <ArrowRight className="h-4 w-4" />
               </Button>
               <div
                 className="flex items-center gap-2 h-12 px-4 rounded-full border bg-muted/50 text-sm font-mono text-muted-foreground cursor-pointer hover:bg-muted transition-colors relative group"

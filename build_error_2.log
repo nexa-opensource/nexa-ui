@@ -1,0 +1,49 @@
+yarn run v1.22.22
+$ turbo run build --filter=web
+• turbo 2.7.5
+• Packages in scope: web
+• Running build in 1 packages
+• Remote caching disabled
+web:build: cache miss, executing b0294740b20fb33f
+web:build: yarn run v1.22.22
+web:build: $ next build
+web:build: ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+web:build:  We detected multiple lockfiles and selected the directory of /Users/khang/Documents/Nexa/nexa/yarn.lock as the root directory.
+web:build:  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+web:build:    See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+web:build:  Detected additional lockfiles: 
+web:build:    * /Users/khang/Documents/Nexa/nexa/apps/web/yarn.lock
+web:build: 
+web:build: ▲ Next.js 16.1.2 (Turbopack)
+web:build: - Environments: .env
+web:build: 
+web:build: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+web:build:   Creating an optimized production build ...
+web:build: ✓ Compiled successfully in 2.1s
+web:build:   Running TypeScript ...
+web:build: Failed to compile.
+web:build: 
+web:build: ./src/components/ui/resizable.tsx:4:17
+web:build: Type error: '"react-resizable-panels"' has no exported member named 'PanelGroup'. Did you mean 'PanelProps'?
+web:build: 
+web:build: [0m [90m 2 |[39m
+web:build:  [90m 3 |[39m [36mimport[39m { [33mGripVertical[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
+web:build: [31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mPanel[39m[33m,[39m [33mPanelGroup[39m[33m,[39m [33mPanelResizeHandle[39m } [36mfrom[39m [32m"react-resizable-panels"[39m[33m;[39m
+web:build:  [90m   |[39m                 [31m[1m^[22m[39m
+web:build:  [90m 5 |[39m
+web:build:  [90m 6 |[39m [36mimport[39m { cn } [36mfrom[39m [32m"@/lib/utils"[39m[33m;[39m
+web:build:  [90m 7 |[39m[0m
+web:build: Next.js build worker exited with code: 1 and signal: null
+web:build: error Command failed with exit code 1.
+web:build: info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+web:build: ERROR: command finished with error: command (/Users/khang/Documents/Nexa/nexa/apps/web) /var/folders/7v/h7r_px3x6bz5wyflnxh7l1ch0000gn/T/yarn--1769219305695-0.3020619978374375/yarn run build exited (1)
+web#build: command (/Users/khang/Documents/Nexa/nexa/apps/web) /var/folders/7v/h7r_px3x6bz5wyflnxh7l1ch0000gn/T/yarn--1769219305695-0.3020619978374375/yarn run build exited (1)
+
+ Tasks:    0 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    6.37s 
+Failed:    web#build
+
+ ERROR  run failed: command  exited (1)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

@@ -1,0 +1,244 @@
+{
+  "Navbar": {
+    "docs": "Tài liệu",
+    "components": "Thành phần",
+    "themes": "Giao diện",
+    "showcase": "Trình diễn",
+    "pricing": "Bảng giá",
+    "blog": "Tin tức",
+    "searchPlaceholder": "Tìm kiếm thành phần..."
+  },
+  "Hero": {
+    "badge": "Nexa UI Kit v2.0",
+    "titlePrefix": "Xây dụng ý tưởng của bạn",
+    "titleHighlight": "nhanh hơn nữa.",
+    "description": "Các thành phần được thiết kế đẹp mắt mà bạn có thể sao chép và dán vào ứng dụng của mình. Dễ tiếp cận. Tùy chỉnh được. Mã nguồn mở.",
+    "getStarted": "Bắt đầu"
+  },
+  "LogoTicker": {
+    "trustedBy": "Được tin cậy bởi các nhóm sáng tạo"
+  },
+  "Features": {
+    "titlePrefix": "Được thiết kế cho",
+    "titleHighlight": "Sự Xuất Sắc",
+    "description": "Chúng tôi đã suy nghĩ lại về thư viện thành phần từ đầu. Đây là những gì làm cho ShadcnUIKit khác biệt.",
+    "design": {
+      "title": "Hệ thống thiết kế",
+      "description": "Một kiến trúc hoàn chỉnh, có thể kết hợp cho sản phẩm của bạn. Mã thông báo toàn cầu, màu sắc thống nhất và khoảng cách nhất quán."
+    },
+    "typeSafe": {
+      "title": "An toàn kiểu",
+      "description": "Được xây dựng với TypeScript cho trải nghiệm phát triển vượt trội. Tự động hoàn thành, xác thực và không có lỗi thời gian chạy."
+    },
+    "responsive": {
+      "title": "Tương thích",
+      "description": "Kiến trúc ưu tiên di động đảm bảo ứng dụng của bạn trông hoàn hảo trên điện thoại, máy tính bảng và máy tính để bàn một cách tự động."
+    },
+    "performance": {
+      "title": "Hiệu suất",
+      "description": "Tối ưu hóa cho tốc độ với chi phí thời gian chạy bằng không. Các thành phần biên dịch thành React & CSS tiêu chuẩn."
+    }
+  },
+  "InteractivePreview": {
+    "headerTitle": "Trải Nghiệm Bảng Điều Khiển",
+    "headerDescription": "Một bố cục bảng điều khiển đầy đủ, tương thích mọi thiết bị, thể hiện sức mạnh của các thành phần."
+  },
+  "Footer": {
+    "description": "Các thành phần được thiết kế đẹp mắt được xây dựng với Radix UI và Tailwind CSS. Mã nguồn mở và miễn phí sử dụng trong các ứng dụng của bạn.",
+    "product": "Sản phẩm",
+    "resources": "Tài nguyên",
+    "legal": "Pháp lý",
+    "components": "Thành phần",
+    "themes": "Giao diện",
+    "pricing": "Bảng giá",
+    "showcase": "Trình diễn",
+    "documentation": "Tài liệu",
+    "blog": "Tin tức",
+    "community": "Cộng đồng",
+    "helpCenter": "Trung tâm trợ giúp",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản dịch vụ",
+    "license": "Giấy phép",
+    "rights": "© 2026 NexaUIKit. Đã đăng ký bản quyền.",
+    "status": "Mọi hệ thống đều hoạt động"
+  },
+  "Docs": {
+    "sidebar": {
+      "gettingStarted": "Bắt đầu",
+      "introduction": "Giới thiệu",
+      "installation": "Cài đặt",
+      "theming": "Giao diện",
+      "examples": "Ví dụ",
+      "components": "Thành phần",
+      "hooks": "Hooks"
+    },
+    "main": {
+      "title": "Tài liệu",
+      "subtitle": "Chào mừng bạn đến với tài liệu toàn diện cho ShadcnUIKit. Tại đây bạn sẽ tìm thấy hướng dẫn chi tiết, API thành phần và ví dụ thực tế để giúp bạn xây dựng ứng dụng tốt hơn nhanh hơn.",
+      "installation": "Cài đặt",
+      "installationDesc": "Thiết lập và chạy trong vài phút.",
+      "theming": "Giao diện",
+      "themingDesc": "Tùy chỉnh mọi khía cạnh của ứng dụng.",
+      "themingContent": "Được xây dựng với CSS Variables & Tailwind.",
+      "openSource": "Thư viện của chúng tôi được thiết kế để sao chép vào dự án của bạn. Chúng tôi không tin vào việc khóa bạn vào một phụ thuộc cụ thể. Bạn sở hữu mã. Bạn có thể tùy chỉnh, mở rộng và biến nó thành của riêng mình.",
+      "onThisPage": "Trên trang này"
+    },
+    "examples": {
+      "button": {
+        "title": "Thành phần Nút",
+        "desc": "Hiển thị một nút hoặc một thành phần trông giống như một nút."
+      },
+      "hook": {
+        "title": "Hook useToast",
+        "desc": "Một hook mạnh mẽ để quản lý thông báo toast."
+      },
+      "theme": {
+        "title": "Giao diện",
+        "desc": "Sử dụng CSS variables cho khả năng tùy chỉnh mạnh mẽ."
+      }
+    },
+    "backToHome": "Quay lại trang chủ"
+  },
+  "ComponentsPage": {
+    "title": "Thành phần",
+    "subtitle": "Các thành phần được thiết kế đẹp mắt, dễ tiếp cận. Sao chép và dán vào ứng dụng của bạn.",
+    "cards": {
+      "card": {
+        "title": "Thẻ",
+        "desc": "Thùng chứa để nhóm nội dung liên quan.",
+        "notificationTitle": "Thông báo",
+        "notificationDesc": "Bạn có tin nhắn mới."
+      },
+      "button": {
+        "title": "Nút",
+        "desc": "Kích hoạt sự kiện hoặc hành động."
+      },
+      "input": {
+        "title": "Đầu vào",
+        "desc": "Điều khiển biểu mẫu cho đầu vào người dùng."
+      },
+      "badge": {
+        "title": "Huy hiệu",
+        "desc": "Hiển thị trạng thái hoặc giá trị."
+      },
+      "avatar": {
+        "title": "Avatar",
+        "desc": "Phần tử hình ảnh cho hồ sơ người dùng."
+      },
+      "interactive": {
+        "title": "Tương tác",
+        "desc": "Thành phần có trạng thái.",
+        "airplaneMode": "Chế độ máy bay",
+        "volume": "Âm lượng"
+      }
+    }
+  },
+  "Themes": {
+    "title": "Tùy chỉnh giao diện",
+    "subtitle": "Tùy chỉnh trải nghiệm UI của bạn. Chọn phong cách và màu sắc cho các thành phần.",
+    "sponsor": "NHÀ TÀI TRỢ GIAO DIỆN",
+    "sponsorDesc": "Giới thiệu thương hiệu của bạn tại đây",
+    "sidebar": {
+      "color": "Màu sắc",
+      "mode": "Chế độ",
+      "light": "Sáng",
+      "dark": "Tối"
+    },
+    "preview": {
+      "dashboard": "Bảng điều khiển",
+      "overview": "Tổng quan về hoạt động dự án của bạn.",
+      "totalRevenue": "Tổng doanh thu",
+      "activeUsers": "Người dùng hoạt động",
+      "lastMonth": "so với tháng trước",
+      "formElements": "Phần tử biểu mẫu",
+      "primaryButton": "Chính",
+      "secondaryButton": "Phụ",
+      "outlineButton": "Viền",
+      "destructiveButton": "Hủy bỏ"
+    }
+  },
+  "Showcase": {
+    "title": "Được xây dựng với",
+    "subtitle": "Khám phá các ứng dụng tuyệt vời mà các nhà phát triển đang xây dựng. Từ bảng điều khiển doanh nghiệp đến danh mục đầu tư sáng tạo.",
+    "communityGallery": "Thư viện cộng đồng",
+    "submit": "Gửi dự án",
+    "viewDocs": "Xem tài liệu",
+    "visit": "Truy cập Website",
+    "categories": {
+      "All": "Tất cả",
+      "SaaS": "SaaS",
+      "E-commerce": "Thương mại điện tử",
+      "Portfolio": "Portfolio",
+      "Dashboard": "Bảng điều khiển"
+    }
+  },
+  "Pricing": {
+    "title": "Giá cả đơn giản, minh bạch",
+    "subtitle": "Chọn gói hoàn hảo cho dự án của bạn. Tất cả các gói đều bao gồm quyền truy cập vào các thành phần cốt lõi của chúng tôi.",
+    "monthly": "Hàng tháng",
+    "yearly": "Hàng năm",
+    "save20": "(Tiết kiệm 20%)",
+    "month": "tháng",
+    "popular": "Phổ biến nhất",
+    "plans": {
+      "hobby": {
+        "name": "Sở thích",
+        "desc": "Hoàn hảo cho các dự án cá nhân.",
+        "button": "Bắt đầu",
+        "features": {
+          "access": "Truy cập tất cả thành phần cốt lõi",
+          "community": "Hỗ trợ cộng đồng",
+          "basic": "Giao diện cơ bản",
+          "charts": "Biểu đồ nâng cao",
+          "priority": "Hỗ trợ ưu tiên"
+        }
+      },
+      "pro": {
+        "name": "Chuyên nghiệp",
+        "desc": "Dành cho nhà phát triển chuyên nghiệp.",
+        "button": "Đăng ký ngay",
+        "features": {
+          "everythingHobby": "Mọi thứ trong gói Sở thích",
+          "charts": "Biểu đồ & bản đồ nâng cao",
+          "multiple": "Nhiều giao diện",
+          "priority": "Hỗ trợ email ưu tiên",
+          "remove": "Xóa ghi công"
+        }
+      },
+      "enterprise": {
+        "name": "Doanh nghiệp",
+        "desc": "Dành cho các nhóm và tổ chức lớn.",
+        "button": "Liên hệ kinh doanh",
+        "features": {
+          "everythingPro": "Mọi thứ trong gói Chuyên nghiệp",
+          "unlimited": "Dự án không giới hạn",
+          "dedicated": "Kênh hỗ trợ riêng",
+          "custom": "Yêu cầu thành phần tùy chỉnh",
+          "sla": "SLA & Hợp đồng"
+        }
+      }
+    }
+  },
+  "Blog": {
+    "title": "Tin tức",
+    "subtitle": "Cập nhật, hướng dẫn và thông tin chi tiết từ nhóm.",
+    "readMore": "Đọc thêm",
+    "posts": {
+      "1": {
+        "title": "Giới thiệu ShadcnUIKit V2",
+        "desc": "Chúng tôi đã xây dựng lại toàn bộ thư viện từ đầu. Hiệu suất tốt hơn, khả năng truy cập cao hơn và hệ thống thiết kế hoàn toàn mới.",
+        "category": "Phát hành"
+      },
+      "2": {
+        "title": "Xây dựng biểu mẫu dễ tiếp cận",
+        "desc": "Đi sâu vào việc tạo các biểu mẫu hoạt động cho mọi người. Tìm hiểu về nhãn ARIA, điều hướng bàn phím và xử lý lỗi.",
+        "category": "Hướng dẫn"
+      },
+      "3": {
+        "title": "Tương lai của React Server Components",
+        "desc": "Các thành phần máy chủ đang thay đổi cách chúng ta xây dựng các ứng dụng web như thế nào. Những điều bạn cần biết cho năm 2024.",
+        "category": "Quan điểm"
+      }
+    }
+  }
+}

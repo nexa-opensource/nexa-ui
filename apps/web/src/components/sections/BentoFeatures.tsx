@@ -17,166 +17,165 @@ import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Slider } from "@/components/ui/slider";
 
-const features = [
-  {
-    id: "design",
-    title: "The Design System",
-    description:
-      "A complete, composable architecture for your product. Global tokens, unified colors, and consistent spacing.",
-    icon: Palette,
-    content: (
-      <div className="w-full h-full p-8 flex flex-col justify-center">
-        <div className="bg-background rounded-xl border shadow-2xl p-6 flex flex-col gap-6 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
-
-          <div className="grid grid-cols-2 gap-6">
-            <div className="space-y-4">
-              <div className="h-2 w-20 bg-muted rounded-full" />
-              <div className="h-10 w-full bg-primary/10 rounded-md border border-primary/20 flex items-center justify-center text-primary font-medium text-sm">
-                Primary Action
-              </div>
-              <div className="h-10 w-full bg-secondary/20 rounded-md border border-secondary/20 flex items-center justify-center text-secondary-foreground font-medium text-sm">
-                Secondary
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="h-2 w-20 bg-muted rounded-full" />
-              <div className="grid grid-cols-4 gap-2">
-                {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                  <div
-                    key={i}
-                    className="aspect-square rounded-md bg-muted/20 border border-muted/30"
-                    style={{
-                      backgroundColor: `hsl(${i * 40}, 70%, 50%)`,
-                      opacity: 0.2,
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-4 border-t flex items-center justify-between text-xs text-muted-foreground font-mono">
-            <span>var(--radius)</span>
-            <span>0.5rem</span>
-          </div>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: "types",
-    title: "Type Safe",
-    description:
-      "Built with TypeScript for a superior developer experience. Autocomplete, validation, and zero runtime errors.",
-    icon: Code2,
-    content: (
-      <div className="w-full h-full flex items-center justify-center p-8 bg-zinc-950/90 dark:bg-black/40 backdrop-blur rounded-xl border border-white/10 shadow-2xl">
-        <div className="font-mono text-sm leading-relaxed text-zinc-400 w-full">
-          <div className="flex gap-2 mb-4 border-b border-white/10 pb-2">
-            <div className="w-3 h-3 rounded-full bg-red-500/20" />
-            <div className="w-3 h-3 rounded-full bg-yellow-500/20" />
-            <div className="w-3 h-3 rounded-full bg-green-500/20" />
-          </div>
-          <div>
-            <span className="text-purple-400">interface</span>{" "}
-            <span className="text-yellow-200">ButtonProps</span>{" "}
-            <span className="text-zinc-500">{"{"}</span>
-          </div>
-          <div className="pl-4">
-            <span className="text-blue-400">variant</span>:{" "}
-            <span className="text-green-400">"default"</span> |{" "}
-            <span className="text-green-400">"destructive"</span>;
-          </div>
-          <div className="pl-4">
-            <span className="text-blue-400">size</span>:{" "}
-            <span className="text-green-400">"sm"</span> |{" "}
-            <span className="text-green-400">"lg"</span> |{" "}
-            <span className="text-green-400">"icon"</span>;
-          </div>
-          <div className="pl-4">
-            <span className="text-blue-400">asChild</span>?:{" "}
-            <span className="text-red-400">boolean</span>;
-          </div>
-          <div>
-            <span className="text-zinc-500">{"}"}</span>
-          </div>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: "responsive",
-    title: "Responsive",
-    description:
-      "Mobile-first architecture ensuring your app looks perfect on phones, tablets, and desktops automatically.",
-    icon: Smartphone,
-    content: (
-      <div className="w-full h-full flex items-center justify-center p-8">
-        <div className="relative w-48 h-80 bg-background border-4 border-muted rounded-[2rem] shadow-xl overflow-hidden flex flex-col">
-          <div className="h-6 bg-muted/10 border-b flex justify-center items-center">
-            <div className="w-12 h-1 bg-muted rounded-full" />
-          </div>
-          <div className="flex-1 p-3 space-y-3 bg-muted/5">
-            <div className="h-24 w-full bg-primary/10 rounded-lg animate-pulse" />
-            <div className="h-4 w-2/3 bg-muted/20 rounded" />
-            <div className="h-4 w-full bg-muted/20 rounded" />
-            <div className="flex gap-2 mt-auto pt-4">
-              <div className="h-8 flex-1 bg-primary rounded-md" />
-            </div>
-          </div>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: "performance",
-    title: "Performance",
-    description:
-      "Optimized for speed with zero-runtime overhead. Components compile to standard React & CSS.",
-    icon: Gauge,
-    content: (
-      <div className="w-full h-full flex items-center justify-center p-8">
-        <div className="relative w-48 h-48">
-          <svg className="w-full h-full transform -rotate-90">
-            <circle
-              cx="96"
-              cy="96"
-              r="88"
-              stroke="currentColor"
-              strokeWidth="12"
-              fill="transparent"
-              className="text-muted/20"
-            />
-            <motion.circle
-              initial={{ strokeDashoffset: 565 }}
-              whileInView={{ strokeDashoffset: 50 }}
-              transition={{ duration: 2, ease: "easeOut" }}
-              cx="96"
-              cy="96"
-              r="88"
-              stroke="currentColor"
-              strokeWidth="12"
-              fill="transparent"
-              strokeDasharray="565.48"
-              className="text-green-500"
-            />
-          </svg>
-          <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-5xl font-bold tracking-tighter">100</span>
-            <span className="text-sm font-medium text-muted-foreground uppercase tracking-widest mt-1">
-              Score
-            </span>
-          </div>
-        </div>
-      </div>
-    ),
-  },
-];
+import { useTranslations } from "next-intl";
 
 export function BentoFeatures() {
+  const t = useTranslations("Features");
   const [activeFeature, setActiveFeature] = useState(0);
   const [progress, setProgress] = useState(0);
+
+  const features = [
+    {
+      id: "design",
+      title: t("design.title"),
+      description: t("design.description"),
+      icon: Palette,
+      content: (
+        <div className="w-full h-full p-8 flex flex-col justify-center">
+          <div className="bg-background rounded-xl border shadow-2xl p-6 flex flex-col gap-6 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
+
+            <div className="grid grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="h-2 w-20 bg-muted rounded-full" />
+                <div className="h-10 w-full bg-primary/10 rounded-md border border-primary/20 flex items-center justify-center text-primary font-medium text-sm">
+                  Primary Action
+                </div>
+                <div className="h-10 w-full bg-secondary/20 rounded-md border border-secondary/20 flex items-center justify-center text-secondary-foreground font-medium text-sm">
+                  Secondary
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="h-2 w-20 bg-muted rounded-full" />
+                <div className="grid grid-cols-4 gap-2">
+                  {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+                    <div
+                      key={i}
+                      className="aspect-square rounded-md bg-muted/20 border border-muted/30"
+                      style={{
+                        backgroundColor: `hsl(${i * 40}, 70%, 50%)`,
+                        opacity: 0.2,
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-4 border-t flex items-center justify-between text-xs text-muted-foreground font-mono">
+              <span>var(--radius)</span>
+              <span>0.5rem</span>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "types",
+      title: t("typeSafe.title"),
+      description: t("typeSafe.description"),
+      icon: Code2,
+      content: (
+        <div className="w-full h-full flex items-center justify-center p-8 bg-zinc-950/90 dark:bg-black/40 backdrop-blur rounded-xl border border-white/10 shadow-2xl">
+          <div className="font-mono text-sm leading-relaxed text-zinc-400 w-full">
+            <div className="flex gap-2 mb-4 border-b border-white/10 pb-2">
+              <div className="w-3 h-3 rounded-full bg-red-500/20" />
+              <div className="w-3 h-3 rounded-full bg-yellow-500/20" />
+              <div className="w-3 h-3 rounded-full bg-green-500/20" />
+            </div>
+            <div>
+              <span className="text-purple-400">interface</span>{" "}
+              <span className="text-yellow-200">ButtonProps</span>{" "}
+              <span className="text-zinc-500">{"{"}</span>
+            </div>
+            <div className="pl-4">
+              <span className="text-blue-400">variant</span>:{" "}
+              <span className="text-green-400">"default"</span> |{" "}
+              <span className="text-green-400">"destructive"</span>;
+            </div>
+            <div className="pl-4">
+              <span className="text-blue-400">size</span>:{" "}
+              <span className="text-green-400">"sm"</span> |{" "}
+              <span className="text-green-400">"lg"</span> |{" "}
+              <span className="text-green-400">"icon"</span>;
+            </div>
+            <div className="pl-4">
+              <span className="text-blue-400">asChild</span>?:{" "}
+              <span className="text-red-400">boolean</span>;
+            </div>
+            <div>
+              <span className="text-zinc-500">{"}"}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "responsive",
+      title: t("responsive.title"),
+      description: t("responsive.description"),
+      icon: Smartphone,
+      content: (
+        <div className="w-full h-full flex items-center justify-center p-8">
+          <div className="relative w-48 h-80 bg-background border-4 border-muted rounded-[2rem] shadow-xl overflow-hidden flex flex-col">
+            <div className="h-6 bg-muted/10 border-b flex justify-center items-center">
+              <div className="w-12 h-1 bg-muted rounded-full" />
+            </div>
+            <div className="flex-1 p-3 space-y-3 bg-muted/5">
+              <div className="h-24 w-full bg-primary/10 rounded-lg animate-pulse" />
+              <div className="h-4 w-2/3 bg-muted/20 rounded" />
+              <div className="h-4 w-full bg-muted/20 rounded" />
+              <div className="flex gap-2 mt-auto pt-4">
+                <div className="h-8 flex-1 bg-primary rounded-md" />
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: "performance",
+      title: t("performance.title"),
+      description: t("performance.description"),
+      icon: Gauge,
+      content: (
+        <div className="w-full h-full flex items-center justify-center p-8">
+          <div className="relative w-48 h-48">
+            <svg className="w-full h-full transform -rotate-90">
+              <circle
+                cx="96"
+                cy="96"
+                r="88"
+                stroke="currentColor"
+                strokeWidth="12"
+                fill="transparent"
+                className="text-muted/20"
+              />
+              <motion.circle
+                initial={{ strokeDashoffset: 565 }}
+                whileInView={{ strokeDashoffset: 50 }}
+                transition={{ duration: 2, ease: "easeOut" }}
+                cx="96"
+                cy="96"
+                r="88"
+                stroke="currentColor"
+                strokeWidth="12"
+                fill="transparent"
+                strokeDasharray="565.48"
+                className="text-green-500"
+              />
+            </svg>
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <span className="text-5xl font-bold tracking-tighter">100</span>
+              <span className="text-sm font-medium text-muted-foreground uppercase tracking-widest mt-1">
+                Score
+              </span>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+  ];
 
   // Auto-rotate features
   useEffect(() => {
@@ -203,15 +202,14 @@ export function BentoFeatures() {
     <section className="container mx-auto py-32 space-y-24">
       <div className="text-center space-y-4 max-w-3xl mx-auto">
         <h2 className="text-4xl md:text-6xl font-bold tracking-tighter">
-          Engineered for{" "}
+          {t("titlePrefix")}{" "}
           <span className="bg-clip-text text-transparent bg-linear-to-r from-emerald-500 to-teal-600">
-            Excellence
+            {t("titleHighlight")}
           </span>
           .
         </h2>
         <p className="text-muted-foreground text-xl max-w-[800px] mx-auto leading-relaxed">
-          We rethought the component library from the ground up. Here is what
-          makes ShadcnUIKit different.
+          {t("description")}
         </p>
       </div>
 

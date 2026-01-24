@@ -90,7 +90,10 @@ const themes = [
   },
 ];
 
+import { useTranslations } from "next-intl";
+
 export default function ThemesPage() {
+  const t = useTranslations("Themes");
   const [activeTheme, setActiveTheme] = useState(themes[0]);
   const [mode, setMode] = useState<"light" | "dark">("light");
 
@@ -106,10 +109,10 @@ export default function ThemesPage() {
           <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
           <div className="flex flex-col items-center z-10">
             <span className="font-bold text-sm text-foreground/80 tracking-wide">
-              THEME SPONSOR
+              {t("sponsor")}
             </span>
             <span className="text-xs text-muted-foreground mt-1">
-              Showcase your brand here
+              {t("sponsorDesc")}
             </span>
           </div>
           <div className="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-background/50 text-[10px] text-muted-foreground border">
@@ -118,13 +121,8 @@ export default function ThemesPage() {
         </div>
 
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight">
-            Theme Customizer
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            Customize your UI experience. Pick a style and color for your
-            components.
-          </p>
+          <h1 className="text-4xl font-bold tracking-tight">{t("title")}</h1>
+          <p className="text-xl text-muted-foreground">{t("subtitle")}</p>
         </div>
 
         <div className="grid lg:grid-cols-[1fr_300px] gap-8 items-start">
@@ -142,48 +140,54 @@ export default function ThemesPage() {
               }
             >
               <div className="space-y-2">
-                <h3 className="text-2xl font-semibold">Dashboard</h3>
-                <p className="text-muted-foreground">
-                  Overview of your project activity.
-                </p>
+                <h3 className="text-2xl font-semibold">
+                  {t("preview.dashboard")}
+                </h3>
+                <p className="text-muted-foreground">{t("preview.overview")}</p>
               </div>
 
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">
-                      Total Revenue
+                      {t("preview.totalRevenue")}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold">$45,231.89</div>
                     <p className="text-xs text-muted-foreground">
-                      +20.1% from last month
+                      +20.1% {t("preview.lastMonth")}
                     </p>
                   </CardContent>
                 </Card>
                 <Card>
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">
-                      Active Users
+                      {t("preview.activeUsers")}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold">+2350</div>
                     <p className="text-xs text-muted-foreground">
-                      +180.1% from last month
+                      +180.1% {t("preview.lastMonth")}
                     </p>
                   </CardContent>
                 </Card>
               </div>
 
               <div className="flex flex-col gap-4 p-6 border rounded-lg bg-muted/20">
-                <h4 className="font-medium">Form Elements</h4>
+                <h4 className="font-medium">{t("preview.formElements")}</h4>
                 <div className="flex gap-4 flex-wrap">
-                  <Button>Primary Button</Button>
-                  <Button variant="secondary">Secondary</Button>
-                  <Button variant="outline">Outline</Button>
-                  <Button variant="destructive">Destructive</Button>
+                  <Button>{t("preview.primaryButton")}</Button>
+                  <Button variant="secondary">
+                    {t("preview.secondaryButton")}
+                  </Button>
+                  <Button variant="outline">
+                    {t("preview.outlineButton")}
+                  </Button>
+                  <Button variant="destructive">
+                    {t("preview.destructiveButton")}
+                  </Button>
                 </div>
               </div>
             </div>
@@ -192,7 +196,7 @@ export default function ThemesPage() {
           {/* Sidebar Controls */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <Label className="text-base">Color</Label>
+              <Label className="text-base">{t("sidebar.color")}</Label>
               <div className="grid grid-cols-3 gap-2">
                 {themes.map((theme) => (
                   <button
@@ -220,7 +224,7 @@ export default function ThemesPage() {
             </div>
 
             <div className="space-y-4">
-              <Label className="text-base">Mode</Label>
+              <Label className="text-base">{t("sidebar.mode")}</Label>
               <div className="grid grid-cols-2 gap-2">
                 <Button
                   variant={mode === "light" ? "default" : "outline"}
@@ -230,7 +234,7 @@ export default function ThemesPage() {
                     document.documentElement.classList.remove("dark");
                   }}
                 >
-                  <Sun className="h-4 w-4" /> Light
+                  <Sun className="h-4 w-4" /> {t("sidebar.light")}
                 </Button>
                 <Button
                   variant={mode === "dark" ? "default" : "outline"}
@@ -240,7 +244,7 @@ export default function ThemesPage() {
                     document.documentElement.classList.add("dark");
                   }}
                 >
-                  <Moon className="h-4 w-4" /> Dark
+                  <Moon className="h-4 w-4" /> {t("sidebar.dark")}
                 </Button>
               </div>
             </div>
