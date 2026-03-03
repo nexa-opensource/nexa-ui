@@ -13,11 +13,11 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/playground",
-        destination: "http://localhost:3002/playground",
+        destination: "http://localhost:3002",
       },
       {
         source: "/playground/:path*",
-        destination: "http://localhost:3002/playground/:path*",
+        destination: "http://localhost:3002/:path*",
       },
     ];
   },
