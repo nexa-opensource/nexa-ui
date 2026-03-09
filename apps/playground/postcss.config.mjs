@@ -1,7 +1,10 @@
-const config = {
-  plugins: {
-    "@tailwindcss/postcss": {},
-  },
-};
+// apps/playground/postcss.config.mjs
+import tailwindcss from "@tailwindcss/postcss";
 
-export default config;
+export default {
+  plugins: [
+    tailwindcss({
+      config: "./tailwind.config.ts",
+    }),
+  ],
+};
