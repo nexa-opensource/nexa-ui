@@ -2,6 +2,10 @@
   "name": "nexa-monorepo",
   "version": "0.0.0",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -18,7 +22,7 @@
     "prettier": "^3.2.5",
     "turbo": "^2.3.3"
   },
-  "packageManager": "yarn@1.22.22",
+  "packageManager": "yarn@1.22.19",
   "engines": {
     "node": ">=18"
   }
